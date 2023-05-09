@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("../fonts/SFPro/SFProDisplay-Heavy.ttf");
+}
+
+body {
+    background-color: #000;
+}
+
+section.heading {
+    width: 100%;
+    min-height: 100%;
+    padding: 49px 64px 0 64px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 100%;
+    min-height: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FAFAF9;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+header nav ul li a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FAFAF9;
+    text-decoration: none;
+}
+
+section.workouts {
+    width: 100%;
+    padding: 180px 64px 180px 98px;
+    min-height: 741px;
+}
+
+section.workouts .workout_items {
+    display: flex;
+    position: relative;
+}
+
+section.workouts .workout_items .workout_text {
+    position: absolute;
+    z-index: -2;
+}
+
+section.workouts .title {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 172px;
+    line-height: 170px;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    color: #FAFAF9;
+}
+
+section.workouts .sub_title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: rgba(239, 237, 232, 0.65);
+    margin-top: 70px;
+}
+
+section.workouts button.btn {
+    width: 200px;
+    height: 70px;
+    background: #E6533C;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    margin-top: 50px;
+}
+
+section.workouts .workout_opportunities {
+    position: absolute;
+    top: 57px;
+    right: 0;
+}
+section.workouts .workout_opportunities img.men {
+    position: absolute;
+    right: 225px;
+}
+section.workouts .workout_opportunities .box-1 {
+    position: absolute;
+    width: 180px;
+    height: 110px;
+    top: -25px;
+    right: 158px;
+    background: #EF8964;
+    border-radius: 12px;
+}
