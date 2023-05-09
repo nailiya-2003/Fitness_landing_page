@@ -96,7 +96,6 @@ section.workouts .sub_title {
     color: rgba(239, 237, 232, 0.65);
     margin-top: 70px;
 }
-
 section.workouts button.btn {
     width: 200px;
     height: 70px;
@@ -111,18 +110,15 @@ section.workouts button.btn {
     color: #FFFFFF;
     margin-top: 50px;
 }
-
 section.workouts .workout_opportunities {
     position: absolute;
     top: 57px;
     right: 0;
 }
-
 section.workouts .workout_opportunities img.men {
     position: absolute;
     right: 202px;
 }
-
 section.workouts .workout_opportunities .box-1 {
     position: absolute;
     width: 180px;
@@ -133,7 +129,6 @@ section.workouts .workout_opportunities .box-1 {
     border-radius: 12px;
     padding: 18px 29px;
 }
-
 section.workouts .workout_opportunities .box-1 .text_1 {
     font-family: 'Inter';
     font-style: normal;
@@ -144,7 +139,6 @@ section.workouts .workout_opportunities .box-1 .text_1 {
     text-transform: uppercase;
     color: #FAFAF9;
 }
-
 section.workouts .workout_opportunities .box-1 .text_1 span {
     font-family: 'Inter';
     font-style: normal;
@@ -154,7 +148,6 @@ section.workouts .workout_opportunities .box-1 .text_1 span {
     letter-spacing: 0.5px;
     color: rgba(239, 237, 232, 0.65);
 }
-
 section.workouts .workout_opportunities .box-2 {
     position: absolute;
     display: flex;
@@ -168,7 +161,6 @@ section.workouts .workout_opportunities .box-2 {
     border-radius: 12px;
     padding: 20px 23px;
 }
-
 section.workouts .workout_opportunities .box-2 .text_2 {
     font-family: 'Inter';
     font-style: normal;
@@ -178,7 +170,6 @@ section.workouts .workout_opportunities .box-2 .text_2 {
     letter-spacing: 0.3px;
     color: #FAFAF9;
 }
-
 section.workouts .workout_opportunities .box-2 .text_2 span {
     font-family: 'Inter';
     font-style: normal;
@@ -188,7 +179,6 @@ section.workouts .workout_opportunities .box-2 .text_2 span {
     letter-spacing: 0.5px;
     color: rgba(239, 237, 232, 0.65);
 }
-
 section.workouts .workout_opportunities .box-3 {
     position: absolute;
     width: 193px;
@@ -199,7 +189,6 @@ section.workouts .workout_opportunities .box-3 {
     border-radius: 12px;
     padding: 20px 22px;
 }
-
 section.workouts .workout_opportunities .box-3 .text_3 {
     font-family: 'Inter';
     font-style: normal;
@@ -217,4 +206,21 @@ section.workouts .workout_opportunities .box-3 .text_3 span {
     font-size: 13px;
     letter-spacing: 1px;
     color: rgba(239, 237, 232, 0.65);
+}
+.features {
+   margin-top: 110px;
+   margin-left: 20px;
+}
+.features .feature_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: rgba(239, 237, 232, 0.65);
+    margin-left: 20px;
+}
+.features img {
+    margin-top: 33px;
 }
