@@ -11,6 +11,7 @@
 
 body {
     background-color: #000;
+    margin-right: 15px;
 }
 
 section.heading {
@@ -18,12 +19,10 @@ section.heading {
     min-height: 100%;
     padding: 49px 64px 0 64px;
 }
-
 .container {
     width: 100%;
     margin: 0 auto;
 }
-
 header {
     width: 100%;
     min-height: 100%;
@@ -31,7 +30,6 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-
 header .logo {
     width: 100%;
     min-height: 100%;
@@ -42,7 +40,6 @@ header .logo {
     line-height: 19px;
     color: #FAFAF9;
 }
-
 header nav ul {
     display: flex;
     gap: 20px;
@@ -240,31 +237,30 @@ section.workouts .workout_opportunities .box-3 .text_3 span {
 .features img {
     margin-top: 33px;
 }
-
 section.start {
-    width: 100vw;
-    min-height: 727px;
-    padding: 200px 0 180px 121px;
-    box-sizing: border-box;
+    width: 100%;
+    min-height: 743px;
+    padding: 200px 0 180px 141px;
 
 }
-
 .start_title {
+    width: 100%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
-    line-height: 50px;
+    /* line-height: 50px; */
     letter-spacing: 0.3px;
     color: #FAFAF9;
 }
-
-.start_title span {
+.start_subtitle {
+    width: 100%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 10px;
     letter-spacing: 0.5px;
     color: rgba(239, 237, 232, 0.65);
+    margin-top: 24px;
 }
