@@ -19,10 +19,12 @@ section.heading {
     min-height: 100%;
     padding: 49px 64px 0 64px;
 }
+
 .container {
     width: 100%;
     margin: 0 auto;
 }
+
 header {
     width: 100%;
     min-height: 100%;
@@ -30,6 +32,7 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+
 header .logo {
     width: 100%;
     min-height: 100%;
@@ -40,6 +43,7 @@ header .logo {
     line-height: 19px;
     color: #FAFAF9;
 }
+
 header nav ul {
     display: flex;
     gap: 20px;
@@ -237,13 +241,15 @@ section.workouts .workout_opportunities .box-3 .text_3 span {
 .features img {
     margin-top: 33px;
 }
+
 section.start {
     width: 100%;
     min-height: 743px;
     padding: 200px 0 180px 141px;
 
 }
-.start_title {
+
+section.start .start_title {
     width: 100%;
     font-family: 'Inter';
     font-style: normal;
@@ -253,7 +259,8 @@ section.start {
     letter-spacing: 0.3px;
     color: #FAFAF9;
 }
-.start_subtitle {
+
+section.start .start_subtitle {
     width: 100%;
     font-family: 'Inter';
     font-style: normal;
@@ -263,4 +270,55 @@ section.start {
     letter-spacing: 0.5px;
     color: rgba(239, 237, 232, 0.65);
     margin-top: 24px;
+}
+
+section.start .start_boxes {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    gap: 32px;
+}
+
+section.start .start_boxes .box {
+    width: 304px;
+    min-height: 190px;
+    background: #323443;
+    border-radius: 12px;
+    padding: 52px 72px 52px 40px;
+}
+
+section.start .start_boxes .box .txt {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #FAFAF9;
+}
+
+section.start .start_boxes .box .descr {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: rgba(239, 237, 232, 0.65);
+    margin-top: 12px;
+}
+section.opportunities {
+    padding: 0px 64px 200px 64px;
+    min-height: 1370px;
+    width: 100%;
+}
+section.opportunities .opportunities-items {
+    width: 100%;
+    background-color: #303030;
+    min-height: 1170px;
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
 }
