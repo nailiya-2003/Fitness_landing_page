@@ -307,18 +307,97 @@ section.start .start_boxes .box .descr {
     color: rgba(239, 237, 232, 0.65);
     margin-top: 12px;
 }
+
 section.opportunities {
     padding: 0px 64px 200px 64px;
     min-height: 1370px;
     width: 100%;
 }
+
 section.opportunities .opportunities-items {
     width: 100%;
-    background-color: #303030;
     min-height: 1170px;
-
 }
-.grid-container {
+
+section.opportunities .opportunities-items .grid-container {
     display: grid;
     grid-template-columns: auto auto;
+}
+
+section.opportunities .opportunities-items .at_home_txt {
+    width: 100%;
+    padding: 162px 69px 129px 86px;
+}
+
+section.opportunities .opportunities-items .at_home_txt .work-txt {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.3px;
+    color: #FAFAF9;
+}
+
+section.opportunities .opportunities-items .at_home_txt .work-descr {
+    font-family: 'Inter';
+    font-style: normal;
+    max-width: 480px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: rgba(239, 237, 232, 0.65);
+    margin-top: 38px;
+}
+
+section.opportunities .opportunities-items .see-more {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    color: #0070C9;
+    margin-top: 31px;
+}
+
+section.opportunities .opportunities-items .at_home_img img {
+    width: 100%;
+}
+
+section.opportunities .opportunities-items .get_programs-img {
+    width: 100%;
+    margin-top: 121px;
+}
+
+section.opportunities .opportunities-items .get_programs {
+    width: 100%;
+    margin-top: 121px;
+    padding: 55px 69px 37px 69px;
+}
+
+section.opportunities .opportunities-items .get_programs .get-txt {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 65px;
+    letter-spacing: 0.83px;
+    color: #FAFAF9;
+}
+
+section.opportunities .opportunities-items .get_programs .get-descr {
+    max-width: 503px;;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: rgba(239, 237, 232, 0.65); 
+    margin-top: 40px;
 }
