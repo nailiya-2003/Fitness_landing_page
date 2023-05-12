@@ -391,13 +391,118 @@ section.opportunities .opportunities-items .get_programs .get-txt {
 }
 
 section.opportunities .opportunities-items .get_programs .get-descr {
-    max-width: 503px;;
+    max-width: 503px;
+    ;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.3px;
-    color: rgba(239, 237, 232, 0.65); 
+    color: rgba(239, 237, 232, 0.65);
     margin-top: 40px;
+}
+
+section.membership {
+    width: 100%;
+    min-height: 888px;
+    padding: 0 64px 27px 64px;
+}
+
+section.membership .member_items {
+    width: 100%;
+    min-height: 747px;
+    padding: 0px 77px 36px 77px;
+}
+
+section.membership .member_items .member-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 70px;
+    letter-spacing: 0.83px;
+    color: #FAFAF9;
+}
+
+section.membership .member_items .member-blocks {
+    display: flex;
+    margin-top: 77px;
+}
+
+section.membership .member_items .free,
+.plus {
+    width: 538px;
+    height: 640px;
+    background: #232532;
+    padding: 71px 68px 77px 68px;
+}
+
+section.membership .member_items .free .join-txt,
+.plus-txt {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #FAFAF9;
+}
+
+section.membership .member_items .free .join-descr,
+.plus-descr {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: rgba(239, 237, 232, 0.65);
+    margin-top: 34px;
+}
+
+section.membership .member_items .free .join-points,
+.plus-points {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: rgba(239, 237, 232, 0.65);
+    margin-top: 16px;
+    max-width: 404px;
+    padding-left: 16px;
+}
+
+section.membership .member_items .free .see-more {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    color: #0070C9;
+    margin-top: 102px;
+}
+
+section.membership .member_items .plus .join-club {
+    width: 150px;
+    height: 30px;
+    background: #0070C9;
+    border-radius: 10px;
+    margin-top: 28px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FAFAF9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
