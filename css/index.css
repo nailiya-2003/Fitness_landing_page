@@ -42,6 +42,13 @@ header .logo {
     font-size: 16px;
     line-height: 19px;
     color: #FAFAF9;
+    transition: 0.5s;
+}
+
+header .logo:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    text-shadow: -1px -1px 12px #FFFFFF;
 }
 
 header nav ul {
@@ -58,6 +65,12 @@ header nav ul li a {
     line-height: 15px;
     color: #FAFAF9;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #13b1cd;
+    text-shadow: 1px 1px -1px#76eaff;
 }
 
 section.workouts {
@@ -100,10 +113,15 @@ section.workouts .sub_title {
 }
 
 section.workouts button.btn {
+    display: inline-block;
     width: 200px;
     height: 70px;
     background: #E6533C;
     border-radius: 10px;
+    margin-top: 50px;
+}
+
+section.workouts button.btn a {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -111,9 +129,8 @@ section.workouts button.btn {
     line-height: 22px;
     letter-spacing: 1px;
     color: #FFFFFF;
-    margin-top: 50px;
+    text-decoration: none;
 }
-
 section.workouts .workout_opportunities {
     position: absolute;
     top: 57px;
@@ -123,6 +140,11 @@ section.workouts .workout_opportunities {
 section.workouts .workout_opportunities img.men {
     position: absolute;
     right: 202px;
+    transition: 0.5s;
+}
+
+section.workouts .workout_opportunities img.men:hover {
+    transform: scale(1.03);
 }
 
 section.workouts .workout_opportunities .box-1 {
@@ -285,6 +307,13 @@ section.start .start_boxes .box {
     background: #323443;
     border-radius: 12px;
     padding: 52px 72px 52px 40px;
+    transition: 0.5s;
+}
+
+section.start .start_boxes .box:hover {
+    transform: scale(1.02);
+    box-shadow: 2px 2px 50px #232532;
+    cursor: pointer;
 }
 
 section.start .start_boxes .box .txt {
@@ -365,13 +394,42 @@ section.opportunities .opportunities-items .see-more {
     margin-top: 31px;
 }
 
+section.opportunities .opportunities-items .see-more img {
+    transition: 0.3s;
+}
+
+section.opportunities .opportunities-items .see-more img:hover {
+    transform: scale(1.1);
+}
+
 section.opportunities .opportunities-items .at_home_img img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+section.opportunities .opportunities-items .at_home_img img:hover {
+    transform: scale(1.005);
+    box-shadow: 1px 1px 20px #FFFFFF;
+    border-radius: 20px 20px 20px 0px;
 }
 
 section.opportunities .opportunities-items .get_programs-img {
     width: 100%;
     margin-top: 121px;
+}
+
+section.opportunities .opportunities-items .get_programs-img img {
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+section.opportunities .opportunities-items .get_programs-img img:hover {
+    transform: scale(1.005);
+    box-shadow: 1px 1px 20px #FFFFFF;
+    border-radius: 20px 20px 20px 0px;
 }
 
 section.opportunities .opportunities-items .get_programs {
@@ -392,7 +450,6 @@ section.opportunities .opportunities-items .get_programs .get-txt {
 
 section.opportunities .opportunities-items .get_programs .get-descr {
     max-width: 503px;
-    ;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -436,6 +493,20 @@ section.membership .member_items .free,
     height: 640px;
     background: #232532;
     padding: 71px 68px 77px 68px;
+    box-shadow: 5px 5px 20px #232532;
+    transition: 0.5s;
+}
+
+section.membership .member_items .free:hover {
+    transform: scale(1.002);
+    box-shadow: 1px 1px 20px #83879d;
+    border-radius: 20px;
+}
+
+section.membership .member_items .plus:hover {
+    transform: scale(1.002);
+    box-shadow: 1px 1px 20px #83879d;
+    border-radius: 20px;
 }
 
 section.membership .member_items .free .join-txt,
@@ -488,6 +559,19 @@ section.membership .member_items .free .see-more {
     letter-spacing: 0.5px;
     color: #0070C9;
     margin-top: 102px;
+    transition: 0.3s;
+}
+
+section.membership .member_items .free .see-more:hover {
+    cursor: pointer;
+}
+
+section.membership .member_items .free .see-more img {
+    transition: 0.3s;
+}
+
+section.membership .member_items .free .see-more img:hover {
+    transform: scale(1.1);
 }
 
 section.membership .member_items .plus .join-club {
@@ -505,9 +589,15 @@ section.membership .member_items .plus .join-club {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.5s;
 }
 
-section.membership .back a{
+section.membership .member_items .plus .join-club:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+section.membership .back a {
     width: 160px;
     height: 40px;
     background: #FAFAF9;
@@ -517,7 +607,9 @@ section.membership .back a{
     justify-content: center;
     gap: 4px;
     float: right;
+    transition: 0.5s;
 }
+
 section.membership .back a {
     font-family: 'Poppins';
     font-style: normal;
@@ -526,4 +618,10 @@ section.membership .back a {
     line-height: 22px;
     color: #303030;
     text-decoration: none;
+}
+
+section.membership .back a:hover {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255);
+    transform: scale(1.05);
+    border-radius: 10px;
 }
