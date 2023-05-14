@@ -426,7 +426,15 @@ section.opportunities .opportunities-items .see-more img {
 section.opportunities .opportunities-items .see-more img:hover {
     transform: scale(1.1);
 }
-
+section.opportunities .opportunities-items .at_home_img {
+    overflow: hidden;
+    transition: 0.5s;
+}
+section.opportunities .opportunities-items .at_home_img:hover {
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 1px 1px 20px #FFFFFF;
+  
+}
 section.opportunities .opportunities-items .at_home_img img {
     width: 100%;
     height: 100%;
@@ -434,30 +442,31 @@ section.opportunities .opportunities-items .at_home_img img {
     transition: 0.5s;
 }
 
-
 section.opportunities .opportunities-items .at_home_img img:hover {
-    transform: scale(1.005);
-    box-shadow: 1px 1px 20px #FFFFFF;
-    border-radius: 20px 20px 20px 20px;
+    transform: scale(1.04); 
 }
 
 section.opportunities .opportunities-items .get_programs-img {
-    width: 100%;
+    width: 85%;
     margin-top: 121px;
+    overflow: hidden;
+    transition: 0.5s;
 }
-
+section.opportunities .opportunities-items .get_programs-img:hover{
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 1px 1px 20px #FFFFFF;
+   
+}
 section.opportunities .opportunities-items .get_programs-img img {
     height: 100%;
     object-fit: cover;
     transition: 0.5s;
-}
-
-section.opportunities .opportunities-items .get_programs-img img:hover {
-    transform: scale(1.005);
     box-shadow: 1px 1px 20px #FFFFFF;
-    border-radius: 20px 20px 20px 20px;
+    transition: 0.5s;
 }
-
+section.opportunities .opportunities-items .get_programs-img img:hover {
+    transform: scale(1.04);
+}
 section.opportunities .opportunities-items .get_programs {
     width: 100%;
     margin-top: 121px;
@@ -538,7 +547,12 @@ section.membership .member_items .free,
     box-shadow: 5px 5px 20px #232532;
     transition: 0.5s;
 }
-
+.counter {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.5s ease-out;
+  }
 section.membership .member_items .free:hover {
     transform: scale(1.002);
     box-shadow: 1px 1px 20px #83879d;

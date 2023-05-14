@@ -20,7 +20,32 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+
+  let kmCount = 0;
+let videoCount = 0;
+let workoutCount = 0;
+
+let kmCounter = document.querySelector('#km-counter');
+let videoCounter = document.querySelector('#video-counter');
+let workoutCounter = document.querySelector('#workout-counter');
+
+setInterval(function() {
+  kmCount += 0.01;
+  videoCount++;
+  workoutCount++;
   
+  kmCounter.innerHTML = kmCount.toFixed(2);
+  videoCounter.innerHTML = videoCount;
+  workoutCounter.innerHTML = workoutCount;
+}, 1000);
+
+
+
+
+
+
+
   
   
   
