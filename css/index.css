@@ -112,7 +112,7 @@ section.workouts .sub_title {
     margin-top: 70px;
 }
 
-section.workouts button.btn {
+section.workouts button {
     display: inline-block;
     width: 200px;
     height: 70px;
@@ -121,7 +121,7 @@ section.workouts button.btn {
     margin-top: 50px;
 }
 
-section.workouts button.btn a {
+section.workouts button a {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -142,6 +142,7 @@ section.workouts .workout_opportunities img.men {
     position: absolute;
     right: 202px;
     transition: 0.5s;
+    z-index: 0;
 }
 
 section.workouts .workout_opportunities img.men:hover {
@@ -192,6 +193,8 @@ section.workouts .workout_opportunities .box-2 {
     background: #303030;
     border-radius: 12px;
     padding: 20px 23px;
+    z-index: 1;
+
 }
 
 section.workouts .workout_opportunities .box-2 .text_2 {
@@ -245,12 +248,12 @@ section.workouts .workout_opportunities .box-3 .text_3 span {
     color: rgba(239, 237, 232, 0.65);
 }
 
-.features {
+section.workouts .features {
     margin-top: 110px;
     margin-left: 20px;
 }
 
-.features .feature_text {
+section.workouts .features .feature_text {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -261,7 +264,7 @@ section.workouts .workout_opportunities .box-3 .text_3 span {
     margin-left: 20px;
 }
 
-.features img {
+section.workouts .features img {
     margin-top: 33px;
 }
 
@@ -278,7 +281,6 @@ section.start .start_title {
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
-    /* line-height: 50px; */
     letter-spacing: 0.3px;
     color: #FAFAF9;
 }
@@ -367,9 +369,6 @@ section.opportunities .opportunities-items .at_home_txt .work-txt {
     line-height: 50px;
     letter-spacing: 0.3px;
     color: #FAFAF9;
-    opacity: 0;
-    transform: translateX(-50px);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 section.opportunities .opportunities-items .at_home_txt .work-descr {
@@ -382,20 +381,8 @@ section.opportunities .opportunities-items .at_home_txt .work-descr {
     letter-spacing: 0.3px;
     color: rgba(239, 237, 232, 0.65);
     margin-top: 38px;
-    opacity: 0;
-    transform: translateX(-50px);
-    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
-section.opportunities .opportunities-items .at_home_txt .work-txt.visible {
-    opacity: 1;
-    transform: translateX(0%);
-}
-
-section.opportunities .opportunities-items .at_home_txt .work-descr.visible {
-    opacity: 1;
-    transform: translateX(0%);
-}
 
 section.opportunities .opportunities-items .see-more {
     display: flex;
@@ -409,15 +396,8 @@ section.opportunities .opportunities-items .see-more {
     letter-spacing: 0.5px;
     color: #0070C9;
     margin-top: 31px;
-    opacity: 0;
-    transform: translateX(-50px);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
-section.opportunities .opportunities-items .see-more.visible {
-    opacity: 1;
-    transform: translateX(0%);
-}
 
 section.opportunities .opportunities-items .see-more img {
     transition: 0.3s;
@@ -426,15 +406,18 @@ section.opportunities .opportunities-items .see-more img {
 section.opportunities .opportunities-items .see-more img:hover {
     transform: scale(1.1);
 }
+
 section.opportunities .opportunities-items .at_home_img {
     overflow: hidden;
     transition: 0.5s;
 }
+
 section.opportunities .opportunities-items .at_home_img:hover {
     border-radius: 20px 20px 20px 20px;
     box-shadow: 1px 1px 20px #FFFFFF;
-  
+
 }
+
 section.opportunities .opportunities-items .at_home_img img {
     width: 100%;
     height: 100%;
@@ -443,7 +426,7 @@ section.opportunities .opportunities-items .at_home_img img {
 }
 
 section.opportunities .opportunities-items .at_home_img img:hover {
-    transform: scale(1.04); 
+    transform: scale(1.04);
 }
 
 section.opportunities .opportunities-items .get_programs-img {
@@ -452,11 +435,13 @@ section.opportunities .opportunities-items .get_programs-img {
     overflow: hidden;
     transition: 0.5s;
 }
-section.opportunities .opportunities-items .get_programs-img:hover{
+
+section.opportunities .opportunities-items .get_programs-img:hover {
     border-radius: 20px 20px 20px 20px;
     box-shadow: 1px 1px 20px #FFFFFF;
-   
+
 }
+
 section.opportunities .opportunities-items .get_programs-img img {
     height: 100%;
     object-fit: cover;
@@ -464,9 +449,11 @@ section.opportunities .opportunities-items .get_programs-img img {
     box-shadow: 1px 1px 20px #FFFFFF;
     transition: 0.5s;
 }
+
 section.opportunities .opportunities-items .get_programs-img img:hover {
     transform: scale(1.04);
 }
+
 section.opportunities .opportunities-items .get_programs {
     width: 100%;
     margin-top: 121px;
@@ -481,14 +468,6 @@ section.opportunities .opportunities-items .get_programs .get-txt {
     line-height: 65px;
     letter-spacing: 0.83px;
     color: #FAFAF9;
-    opacity: 0;
-    transform: translateX(-50px);
-    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
-}
-
-section.opportunities .opportunities-items .get_programs .get-txt.visible {
-    opacity: 1;
-    transform: translateX(0%);
 }
 
 section.opportunities .opportunities-items .get_programs .get-descr {
@@ -501,15 +480,8 @@ section.opportunities .opportunities-items .get_programs .get-descr {
     letter-spacing: 0.3px;
     color: rgba(239, 237, 232, 0.65);
     margin-top: 40px;
-    opacity: 0;
-    transform: translateX(750px);
-    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
 }
 
-section.opportunities .opportunities-items .get_programs .get-descr.visible {
-    opacity: 1;
-    transform: translateX(0%);
-}
 
 section.membership {
     width: 100%;
@@ -547,12 +519,7 @@ section.membership .member_items .free,
     box-shadow: 5px 5px 20px #232532;
     transition: 0.5s;
 }
-.counter {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    transition: all 0.5s ease-out;
-  }
+
 section.membership .member_items .free:hover {
     transform: scale(1.002);
     box-shadow: 1px 1px 20px #83879d;
@@ -681,3 +648,341 @@ section.membership .back a:hover {
     transform: scale(1.05);
     border-radius: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+    header nav ul {
+        display: none;
+    }
+
+    section.heading {
+        padding: 49px 30px 0 30px;
+    }
+
+    section.workouts {
+        padding: 180px 30px 0 30px;
+        display: block;
+    }
+
+    section.workouts .workout_items {
+        display: block;
+    }
+
+    section.workouts .workout_items .workout_text {
+        position: static;
+    }
+
+    section.workouts .title {
+        font-size: 45px;
+        line-height: 60px;
+        letter-spacing: 1px;
+    }
+
+    section.workouts .sub_title {
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+    }
+
+    section.workouts button {
+        width: 150px;
+        height: 50px;
+        margin-top: 90px;
+        transition: 0.5s;
+    }
+
+    section.workouts button:hover {
+        background-color: #9d2a00;
+    }
+
+    section.workouts button:active {
+        background-color: transparent;
+    }
+
+    section.workouts button a {
+        font-size: 15px;
+    }
+
+    section.workouts .workout_opportunities {
+        position: static;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        display: flex;
+        width: 100%;
+        gap: 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section.workouts .workout_opportunities img.men {
+        position: static;
+        width: 100%;
+    }
+
+    section.workouts .workout_opportunities .box-1 {
+        width: 150px;
+        height: 90px;
+        padding: 15px 20px;
+        position: static;
+    }
+
+    section.workouts .workout_opportunities .box-1 .text_1 {
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: -2px;
+
+    }
+
+    section.workouts .workout_opportunities .box-1 .text_1 span {
+        font-size: 16px;
+    }
+
+    section.workouts .workout_opportunities .box-2 {
+        width: 187px;
+        height: 96px;
+        padding: 15px 20px;
+        position: static;
+        margin-top: 30px;
+    }
+
+    section.workouts .workout_opportunities .box-2 .text_2 {
+        font-size: 19px;
+        line-height: 20px;
+    }
+
+    section.workouts .workout_opportunities .box-2 .text_2 span {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    section.workouts .workout_opportunities .box-3 {
+        width: 170px;
+        padding: 25px 22px;
+        position: static;
+        margin-top: 30px;
+        height: 90px;
+    }
+
+    section.workouts .workout_opportunities .box-3 .text_3 {
+        font-size: 30px;
+        line-height: 20px;
+    }
+
+    section.workouts .workout_opportunities .box-3 .text_3 span {
+        font-size: 10px;
+    }
+
+    section.workouts .features img {
+        width: 100%;
+        margin-top: 33px;
+    }
+
+    section.start {
+        padding: 200px 0 50px 30px;
+    }
+
+    section.start .start_title {
+        font-size: 30px;
+    }
+
+    section.start .start_subtitle {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    section.start .start_boxes {
+        flex-wrap: wrap;
+    }
+
+    section.opportunities {
+        padding: 0px 64px 250px 30px;
+        min-height: 1570px;
+        width: 100%;
+    }
+
+    section.opportunities .opportunities-items .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    section.opportunities .opportunities-items .at_home_txt {
+        width: 100%;
+        padding: 100px 20px 90px 10px;
+    }
+
+    section.opportunities .opportunities-items .at_home_txt .work-txt {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    section.opportunities .opportunities-items .at_home_txt .work-descr {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    section.opportunities .opportunities-items .see-more img:hover {
+        transform: scale(1.05);
+    }
+
+    section.opportunities .opportunities-items .at_home_img:hover {
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 1px 1px 15px #FFFFFF;
+
+    }
+
+
+    section.opportunities .opportunities-items .at_home_img img:hover {
+        transform: scale(1.02);
+    }
+
+    section.opportunities .opportunities-items .get_programs-img {
+        height: 21rem;
+        width: 23.7rem;
+        background-color: transparent;
+        position: absolute;
+        bottom: -15rem;
+
+    }
+
+    section.opportunities .opportunities-items .get_programs-img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+
+    section.opportunities .opportunities-items .get_programs-img img:hover {
+        transform: scale(1.04);
+        box-shadow: 1px 1px 15px #FFFFFF;
+    }
+
+    section.opportunities .opportunities-items .get_programs {
+        width: 100%;
+        margin-top: 121px;
+        padding: 50px 20px 100px 10px;
+
+    }
+
+    section.opportunities .opportunities-items .get_programs .get-txt {
+        font-size: 35px;
+        line-height: 45px;
+        position: absolute;
+        bottom: 17rem;
+    }
+
+    section.opportunities .opportunities-items .get_programs .get-descr {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    section.membership {
+        padding: 50px 64px 27px 10px;
+    }
+    section.membership .member_items {
+        padding: 0px 77px 36px 30px;
+    }
+    
+    section.membership .member_items .member-title {
+        font-size: 35px;
+    }
+    section.membership .member_items .member-blocks {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 70px;
+    }
+    
+    section.membership .member_items .free,
+    .plus {
+        width: 400px;
+        padding: 71px 68px 77px 68px;
+        box-shadow: 5px 5px 20px #232532;
+        transition: 0.5s;
+    }
+    
+    section.membership .member_items .free:hover {
+        transform: scale(1.002);
+        box-shadow: 1px 1px 20px #83879d;
+        border-radius: 20px;
+    }
+    
+    section.membership .member_items .plus:hover {
+        transform: scale(1.002);
+        box-shadow: 1px 1px 20px #83879d;
+        border-radius: 20px;
+    }
+    
+    section.membership .member_items .free .join-txt,
+    .plus-txt {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        color: #FAFAF9;
+    }
+    
+    section.membership .member_items .free .join-descr,
+    .plus-descr {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        color: rgba(239, 237, 232, 0.65);
+        margin-top: 34px;
+    }
+    
+    section.membership .member_items .free .join-points,
+    .plus-points {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        color: rgba(239, 237, 232, 0.65);
+        margin-top: 16px;
+        max-width: 404px;
+        padding-left: 16px;
+    }
+    
+    section.membership .member_items .free .see-more {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.5px;
+        color: #0070C9;
+        margin-top: 102px;
+        transition: 0.3s;
+    }
+    
+    section.membership .member_items .free .see-more:hover {
+        cursor: pointer;
+    }
+    
+    section.membership .member_items .free .see-more img {
+        transition: 0.3s;
+    }
+    
+    section.membership .member_items .free .see-more img:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media only screen and (min-width: 768px) {}
+
+
+@media only screen and (min-width: 992px) {}
+
+
+@media only screen and (min-width: 1200px) {}
