@@ -49,6 +49,7 @@ header .logo:hover {
     transform: scale(1.03);
     cursor: pointer;
     text-shadow: -1px -1px 12px #FFFFFF;
+    -webkit-text-stroke: #000 0.1px;
 }
 
 header nav ul {
@@ -69,10 +70,23 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #13b1cd;
-    text-shadow: 1px 1px -1px#76eaff;
+    color: #feffff;
+    text-shadow: 1px 1px -1px#fbfeff;
+}
+header nav ul li a:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-top: 2px;
+    width: 0;
+    height: 1px;
+    background: #ffffff;
+    transition: all 0.5s ease;
 }
 
+header nav ul li a:hover::after {
+    width: 100%;
+}
 section.workouts {
     width: 100%;
     padding: 180px 64px 0 121px;
