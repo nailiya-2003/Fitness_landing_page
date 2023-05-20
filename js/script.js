@@ -1,7 +1,7 @@
 new WOW().init();
 
 
-const time = 100;
+const time = 1000;
 const step = 1;
 
 function outNum(num, elem) {

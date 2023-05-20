@@ -158,6 +158,13 @@ section.workouts .workout_opportunities .box-1 {
     border-radius: 12px;
     padding: 18px 29px;
 }
+.numbers-items {
+    width: 100%;
+}
+ .numbers {
+    display: flex;
+    align-items: center;
+}
 
 section.workouts .workout_opportunities .box-1 .text_1 {
     font-family: 'Inter';
@@ -210,7 +217,7 @@ section.workouts .workout_opportunities .box-2 .text_2 span {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
     letter-spacing: 0.5px;
     color: rgba(239, 237, 232, 0.65);
