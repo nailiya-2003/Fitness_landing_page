@@ -52,22 +52,58 @@ animateDecimal(4.95, 2000, 'out');
 
 
 
-$(document).ready(function(){
-  $(".start_boxes").owlCarousel({
+// $(document).ready(function () {
+//   $(".owl-carousel").owlCarousel({
+//       items: 5,
+//       loop: true,
+//       margin: 10,
+//       nav: true,
+//   });
+// });
+
+$(document).ready(function() {
+  $('.owl-carousel').owlCarousel({
     items: 4,
     loop: true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
     nav: true,
-    navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+    rtl:true
   });
 });
 
 
 
+// $(document).ready(function() {
+//   $('.owl-carousel').owlCarousel({
+//     items: 4,
+//     loop: true,
+//     nav: true,
+//     autoplay: true,
+//     autoplayTimeout: 2000,
+//     autoplayHoverPause: true,
+//     onInitialized: function(event) {
+//       var carousel = event.target;
+//       var $dots = $(carousel).find('.owl-dots .owl-dot');
 
-  
+//       $dots.each(function(index, dot) {
+//         var $dot = $(dot);
+//         var $text = $dot.find('.dot-text');
+//         var textWidth = $text.outerWidth();
+//         var dotWidth = $dot.outerWidth();
+//         var rightValue = (dotWidth - textWidth) / 2;
+
+//         $text.css('right', rightValue + 'px');
+//       });
+//     }
+//   });
+// });
+
+
+
+
+
   
   
   
