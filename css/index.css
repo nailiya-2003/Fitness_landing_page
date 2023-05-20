@@ -161,11 +161,18 @@ section.workouts .workout_opportunities .box-1 {
 .numbers-items {
     width: 100%;
 }
- .numbers {
+.number {
     display: flex;
     align-items: center;
 }
-
+ .number1 {
+    display: flex;
+    align-items: center;
+}
+.number2 {
+    display: flex;
+    align-items: center;
+}
 section.workouts .workout_opportunities .box-1 .text_1 {
     font-family: 'Inter';
     font-style: normal;
