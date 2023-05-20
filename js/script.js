@@ -1,5 +1,7 @@
 new WOW().init();
 
+
+
 function animateInteger(targetNumber, duration, elementId) {
   const element = document.getElementById(elementId);
   const startNumber = parseInt(element.innerText.replace(',', ''));
@@ -50,7 +52,17 @@ animateDecimal(4.95, 2000, 'out');
 
 
 
-
+$(document).ready(function(){
+  $(".start_boxes").owlCarousel({
+    items: 4,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    nav: true,
+    navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+  });
+});
 
 
 

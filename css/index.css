@@ -142,6 +142,7 @@ section.workouts .workout_opportunities img.men {
     position: absolute;
     right: 202px;
     transition: 0.5s;
+    height: auto; 
 }
 
 section.workouts .workout_opportunities img.men:hover {
@@ -1271,7 +1272,7 @@ section.membership .back a:hover {
     }
      
 }
-}
+
 
 
 @media only screen and (min-width: 992px) {}
