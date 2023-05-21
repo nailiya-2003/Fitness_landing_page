@@ -67,8 +67,31 @@ $(document).ready(function () {
   });
 });
 
-
-
+// var scrollElem = document.getElementById("scrollToTop");
+// window.onscroll = function() {
+//         if(this.scrollY>400){
+//             scrollElem.classList.add("back")
+//         }
+//         else{
+//             scrollElem.classList.remove("back")
+//         }
+//     }
+// scrollElem.onclick=function(){
+//     window.scrollTo({ top: 0, behavior: 'smooth' });
+// }
+window.onload = function() {
+  var scrollElem = document.getElementById("scrollToTop");
+  window.onscroll = function() {
+      if (this.scrollY > 400) {
+          scrollElem.style.display = "block";
+      } else {
+          scrollElem.style.display = "none";
+      }
+  }
+  scrollElem.onclick = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
 
 
 
