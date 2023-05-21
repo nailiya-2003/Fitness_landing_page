@@ -21,8 +21,8 @@ section.heading {
 }
 
 .container {
-    width: 100%;
     margin: 0 auto;
+    width: 100%;
 }
 
 header {
@@ -73,6 +73,7 @@ header nav ul li a:hover {
     color: #feffff;
     text-shadow: 1px 1px -1px#fbfeff;
 }
+
 header nav ul li a:after {
     content: "";
     display: block;
@@ -87,6 +88,7 @@ header nav ul li a:after {
 header nav ul li a:hover::after {
     width: 100%;
 }
+
 section.workouts {
     width: 100%;
     padding: 180px 64px 0 121px;
@@ -157,15 +159,14 @@ section.workouts .workout_opportunities {
     right: 0;
 }
 
-section.workouts .workout_opportunities img.men {
-    position: absolute;
+section.workouts .workout_opportunities .men_img {
+    width: 100%;
     right: 202px;
-    transition: 0.5s;
-    height: auto;
 }
 
-section.workouts .workout_opportunities img.men:hover {
-    transform: scale(1.03);
+section.workouts .workout_opportunities img.men {
+    position: absolute;
+    height: auto;
 }
 
 section.workouts .workout_opportunities .box-1 {
@@ -177,6 +178,17 @@ section.workouts .workout_opportunities .box-1 {
     background: #EF8964;
     border-radius: 12px;
     padding: 18px 29px;
+    animation: move-box 3s linear forwards;
+}
+
+@keyframes move-box {
+    0% {
+        transform: rotate(0deg) translateX(50px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translateX(0px) rotate(-360deg);
+    }
 }
 
 .numbers-items {
@@ -232,7 +244,17 @@ section.workouts .workout_opportunities .box-2 {
     border-radius: 12px;
     padding: 20px 23px;
     z-index: 1;
+    animation: move-box-1 2.5s linear forwards;
+}
 
+@keyframes move-box-1 {
+    0% {
+        transform: rotate(0deg) translateX(-50px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translateX(0px) rotate(-360deg);
+    }
 }
 
 section.workouts .workout_opportunities .box-2 .text_2 {
@@ -264,6 +286,17 @@ section.workouts .workout_opportunities .box-3 {
     background: #7A29DC;
     border-radius: 12px;
     padding: 20px 22px;
+    animation: move-box-2 2.5s linear forwards;
+}
+
+@keyframes move-box-2 {
+    0% {
+        transform: rotate(0deg) translateX(50px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translateX(0px) rotate(-360deg);
+    }
 }
 
 section.workouts .workout_opportunities .box-3 .text_3 {
@@ -459,6 +492,7 @@ section.opportunities .opportunities-items .see-more {
     margin-top: 31px;
     cursor: pointer;
 }
+
 section.opportunities .opportunities-items .see-more:hover {
     color: #62b8ff;
 }

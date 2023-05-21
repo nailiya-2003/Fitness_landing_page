@@ -1,3 +1,7 @@
+var scene = document.getElementById("scene");
+var parallaxInstance = new Parallax(scene);
+
+
 new WOW().init();
 
 
@@ -51,17 +55,7 @@ animateInteger(350, 2500, 'out1');
 animateDecimal(4.95, 2000, 'out');
 
 
-
-// $(document).ready(function () {
-//   $(".owl-carousel").owlCarousel({
-//       items: 5,
-//       loop: true,
-//       margin: 10,
-//       nav: true,
-//   });
-// });
-
-$(document).ready(function() {
+$(document).ready(function () {
   $('.owl-carousel').owlCarousel({
     items: 4,
     loop: true,
@@ -69,41 +63,13 @@ $(document).ready(function() {
     autoplay: true,
     autoplayTimeout: 2000,
     autoplayHoverPause: true,
-    rtl:true
+    rtl: true
   });
 });
 
 
 
-// $(document).ready(function() {
-//   $('.owl-carousel').owlCarousel({
-//     items: 4,
-//     loop: true,
-//     nav: true,
-//     autoplay: true,
-//     autoplayTimeout: 2000,
-//     autoplayHoverPause: true,
-//     onInitialized: function(event) {
-//       var carousel = event.target;
-//       var $dots = $(carousel).find('.owl-dots .owl-dot');
-
-//       $dots.each(function(index, dot) {
-//         var $dot = $(dot);
-//         var $text = $dot.find('.dot-text');
-//         var textWidth = $text.outerWidth();
-//         var dotWidth = $dot.outerWidth();
-//         var rightValue = (dotWidth - textWidth) / 2;
-
-//         $text.css('right', rightValue + 'px');
-//       });
-//     }
-//   });
-// });
 
 
 
 
-
-  
-  
-  
