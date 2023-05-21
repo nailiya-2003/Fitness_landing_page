@@ -12,7 +12,26 @@
 body {
     background-color: #000;
     margin-right: 15px;
+    overflow: scroll;
 }
+body::-webkit-scrollbar {
+    width: 15px;
+   
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #818181;
+    border-radius: 6px;
+    height: 200px;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
 
 section.heading {
     position: relative;
