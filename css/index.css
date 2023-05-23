@@ -1123,21 +1123,18 @@ section.membership .back_items:hover {
         width: 150px;
         height: 90px;
         padding: 15px 20px;
-        position: static;
-        
+        position: static;   
     }
 
     section.workouts .workout_opportunities .box-1 .text_1 {
         font-size: 30px;
         line-height: 40px;
         letter-spacing: -2px;
-
     }
 
     section.workouts .workout_opportunities .box-1 .text_1 span {
         font-size: 16px;
     }
-
     section.workouts .workout_opportunities .box-2 {
         width: 187px;
         height: 96px;
@@ -1145,7 +1142,6 @@ section.membership .back_items:hover {
         position: static;
         margin-top: 30px;
     }
-
     section.workouts .workout_opportunities .box-2 .text_2 {
         font-size: 19px;
         line-height: 20px;
@@ -1365,13 +1361,13 @@ section.membership .back_items:hover {
     }   
 
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 749px) {
     header nav ul {
         display: none;
     }
 
     section.heading {
-        padding: 50px 50px 0 50px;
+        padding: 80px 50px 0 50px;
     }
 
     section.workouts {
