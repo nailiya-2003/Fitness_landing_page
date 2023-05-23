@@ -67,18 +67,48 @@ $(document).ready(function () {
   });
 });
 
-// var scrollElem = document.getElementById("scrollToTop");
-// window.onscroll = function() {
-//         if(this.scrollY>400){
-//             scrollElem.classList.add("back")
-//         }
-//         else{
-//             scrollElem.classList.remove("back")
-//         }
-//     }
-// scrollElem.onclick=function(){
-//     window.scrollTo({ top: 0, behavior: 'smooth' });
-// }
+$(document).ready(function () {
+  function checkCarousel() {
+    var viewportWidth = $(window).width();
+
+    if (viewportWidth < 768) {
+      // Маленькие экраны (меньше 768px)
+      $('.owl-carousel').trigger('destroy.owl.carousel'); // Уничтожаем карусель
+      $('.owl-carousel').removeClass('owl-loaded'); // Удаляем классы, связанные с каруселью
+      $('.owl-carousel').owlCarousel({
+        items: 1, // Задаем количество отображаемых элементов
+        loop: true,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        rtl: true
+       
+      });
+    } else {
+      // Большие экраны (от 768px и выше)
+      $('.owl-carousel').trigger('destroy.owl.carousel'); // Уничтожаем карусель
+      $('.owl-carousel').removeClass('owl-loaded'); // Удаляем классы, связанные с каруселью
+      $('.owl-carousel').owlCarousel({
+        items: 4, // Задаем количество отображаемых элементов
+        loop: true,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        rtl: true
+      });
+    }
+  }
+
+  // Проверяем карусель при загрузке страницы и при изменении размера окна
+  checkCarousel();
+  $(window).on('resize', function () {
+    checkCarousel();
+  });
+});
+
+
 window.onload = function() {
   var scrollElem = document.getElementById("scrollToTop");
   window.onscroll = function() {
