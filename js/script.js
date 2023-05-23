@@ -71,26 +71,51 @@ $(document).ready(function () {
   function checkCarousel() {
     var viewportWidth = $(window).width();
 
-    if (viewportWidth < 768) {
-      // Маленькие экраны (меньше 768px)
-      $('.owl-carousel').trigger('destroy.owl.carousel'); // Уничтожаем карусель
-      $('.owl-carousel').removeClass('owl-loaded'); // Удаляем классы, связанные с каруселью
+    if (viewportWidth < 750) {
+      // Очень маленькие экраны (меньше 480px)
+      $('.owl-carousel').trigger('destroy.owl.carousel');
+      $('.owl-carousel').removeClass('owl-loaded');
       $('.owl-carousel').owlCarousel({
-        items: 1, // Задаем количество отображаемых элементов
+        items: 1,
         loop: true,
         nav: true,
         autoplay: true,
         autoplayTimeout: 2000,
         autoplayHoverPause: true,
         rtl: true
-       
+      });
+    } else if (viewportWidth < 868) {
+      // Маленькие экраны (от 480px до 767px)
+      $('.owl-carousel').trigger('destroy.owl.carousel');
+      $('.owl-carousel').removeClass('owl-loaded');
+      $('.owl-carousel').owlCarousel({
+        items: 2,
+        loop: true,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        rtl: true
+      });
+    } else if (viewportWidth < 992) {
+      // Средние экраны (от 768px до 991px)
+      $('.owl-carousel').trigger('destroy.owl.carousel');
+      $('.owl-carousel').removeClass('owl-loaded');
+      $('.owl-carousel').owlCarousel({
+        items: 3,
+        loop: true,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        rtl: true
       });
     } else {
-      // Большие экраны (от 768px и выше)
-      $('.owl-carousel').trigger('destroy.owl.carousel'); // Уничтожаем карусель
-      $('.owl-carousel').removeClass('owl-loaded'); // Удаляем классы, связанные с каруселью
+      // Большие экраны (992px и выше)
+      $('.owl-carousel').trigger('destroy.owl.carousel');
+      $('.owl-carousel').removeClass('owl-loaded');
       $('.owl-carousel').owlCarousel({
-        items: 4, // Задаем количество отображаемых элементов
+        items: 4,
         loop: true,
         nav: true,
         autoplay: true,
@@ -101,12 +126,12 @@ $(document).ready(function () {
     }
   }
 
-  // Проверяем карусель при загрузке страницы и при изменении размера окна
   checkCarousel();
   $(window).on('resize', function () {
     checkCarousel();
   });
 });
+
 
 
 window.onload = function() {
