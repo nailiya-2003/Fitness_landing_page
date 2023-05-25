@@ -115,7 +115,7 @@ header nav ul li a:hover::after {
     position: fixed;
     right: 20px;
     top: 20px;
-    z-index: 9999999999999999999999;
+    z-index: 9999999999999999;
     background-color: transparent;
     display: none;
 }
@@ -192,25 +192,25 @@ header nav ul li a:hover::after {
 .menu {
     position: fixed;
     background-color: #102027;
-    right: 0;
+    right: 0px;
     top: 0;
     bottom: 0;
     z-index: 0;
     width: 0;
     color: #fefefe;
     transition: width 0.4s ease-in-out;
-    
-    
 }
 .menu ul {
     display: block;
     margin: 0 auto;
-  margin-top: 170px;
-  list-style-type: none;
-  transform: translateX(45%);
-  /* left: 50%; */
- 
- 
+    margin-top: 170px;
+    list-style-type: none;
+    transform: translateX(-8%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: -100px;
 }
 .menu li {
     margin-top: 40px;
@@ -218,6 +218,7 @@ header nav ul li a:hover::after {
     letter-spacing: 1px;
     cursor:pointer;
 }
+
 section.workouts {
     width: 100%;
     padding: 180px 64px 0 121px;
@@ -1871,6 +1872,16 @@ section.membership .back_items:hover {
     section.membership .member_items .free .see-more {
         font-size: 14px;
         margin-top: 50px;
+    }
+
+    #scrollToTop {
+        z-index: 9;
+        position: fixed;
+        bottom: 5%;
+        right: 2%;
+        display: none;
+        font-size: 20px;
+        padding: 10px 16px;
     }
 
     section.membership .back a {
