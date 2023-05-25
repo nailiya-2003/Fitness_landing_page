@@ -53,6 +53,9 @@ function formatDecimal(number) {
 animateInteger(500, 3000, 'out2');
 animateInteger(350, 2500, 'out1');
 animateDecimal(4.95, 2000, 'out');
+animateInteger(500, 3000, 'out-mob1');
+animateInteger(350, 2500, 'out-mob2');
+animateDecimal(4.95, 2000, 'out-mob3');
 
 
 $(document).ready(function () {
@@ -84,12 +87,12 @@ $(document).ready(function () {
         autoplayHoverPause: true,
         rtl: true
       });
-    } else if (viewportWidth < 868) {
+    } else if (viewportWidth < 992) {
       // Маленькие экраны (от 480px до 767px)
       $('.owl-carousel').trigger('destroy.owl.carousel');
       $('.owl-carousel').removeClass('owl-loaded');
       $('.owl-carousel').owlCarousel({
-        items: 2,
+        items: 1,
         loop: true,
         nav: true,
         autoplay: true,
@@ -97,19 +100,20 @@ $(document).ready(function () {
         autoplayHoverPause: true,
         rtl: true
       });
-    } else if (viewportWidth < 992) {
-      // Средние экраны (от 768px до 991px)
-      $('.owl-carousel').trigger('destroy.owl.carousel');
-      $('.owl-carousel').removeClass('owl-loaded');
-      $('.owl-carousel').owlCarousel({
-        items: 3,
-        loop: true,
-        nav: true,
-        autoplay: true,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        rtl: true
-      });
+    // } else if (viewportWidth < 992) {
+    //   // Средние экраны (от 768px до 991px)
+    //   $('.owl-carousel').trigger('destroy.owl.carousel');
+    //   $('.owl-carousel').removeClass('owl-loaded');
+    //   $('.owl-carousel').owlCarousel({
+    //     items: 3,
+    //     loop: true,
+    //     nav: true,
+    //     autoplay: true,
+    //     autoplayTimeout: 2000,
+    //     autoplayHoverPause: true,
+    //     rtl: true
+    //   });
+
     } else {
       // Большие экраны (992px и выше)
       $('.owl-carousel').trigger('destroy.owl.carousel');
@@ -148,6 +152,33 @@ window.onload = function() {
   }
 }
 
+var hamb = document.querySelector('.hamburger'); 
+var menu = document.querySelector('.menu');
+var list = document.getElementById('menu');
+
+
+function closeMenu() {
+    menu.style.width = '0px';
+}
+
+function openMenu() {
+    menu.style.width = '100%';
+}
+
+hamb.addEventListener('click', function() {
+var active = hamb.classList.toggle('hamburger--active');
+    
+if(active) {
+             hamb.addEventListener('click', openMenu());
+    } else {
+             hamb.addEventListener('click', closeMenu());
+    }
+});
+
+list.addEventListener('click', function() { 
+closeMenu();
+var active = hamb.classList.toggle('hamburger--active');
+});
 
 
 
