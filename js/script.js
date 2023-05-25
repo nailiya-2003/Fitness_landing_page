@@ -182,3 +182,42 @@ var active = hamb.classList.toggle('hamburger--active');
 
 
 
+
+
+  // Получаем элемент карусели
+
+  // Получаем элемент карусели
+  var carousel = document.getElementById('myCarousel');
+
+  // Устанавливаем интервал прокрутки в миллисекундах
+  var interval = 3000;
+
+  // Функция для прокрутки карусели вправо
+  function slideCarousel() {
+    var activeItem = carousel.querySelector('.carousel-item.active');
+    var nextItem = activeItem.nextElementSibling;
+
+    // Если достигнут конец карусели, переключаемся на первый элемент
+    if (!nextItem) {
+      nextItem = carousel.querySelector('.carousel-item:first-child');
+    }
+
+    // Добавляем классы для прокрутки вправо
+    activeItem.classList.remove('active');
+    nextItem.classList.add('active');
+    carousel.classList.add('carousel-scroll-right');
+    rtl: true
+  }
+
+    // Удаляем классы после завершения анимации
+    setTimeout(function() {
+      carousel.classList.remove('carousel-scroll-right');
+    }, 500);
+   
+
+  // Запускаем прокрутку карусели с заданным интервалом
+  setInterval(slideCarousel, interval);
+
+
+
+
