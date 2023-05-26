@@ -78,6 +78,7 @@ header nav ul {
     display: flex;
     gap: 20px;
     justify-content: flex-end;
+    list-style: none;
 }
 
 header nav ul li a {
@@ -119,77 +120,93 @@ header nav ul li a:hover::after {
     background-color: transparent;
     display: none;
 }
+
 .hamburger {
-	 margin: 0;
-	 padding: 0;
-	 border: 0;
-	 background-color: transparent;
-	 cursor: pointer;
-     z-index: 1;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 1;
 }
- .hamburger:focus > .hamburger__container {
-	 box-shadow: 0 0 2px 2px #51a7e8;
+
+.hamburger:focus>.hamburger__container {
+    box-shadow: 0 0 2px 2px #51a7e8;
 }
- .hamburger__container {
-	 display: flex;
-	 align-items: center;
-	 min-width: 30px;
-	 min-height: 25px;
-     transition-duration: 0.7s;
-     margin-top: 20px;
-     margin-right: 10px;
+
+.hamburger__container {
+    display: flex;
+    align-items: center;
+    min-width: 30px;
+    min-height: 25px;
+    transition-duration: 0.7s;
+    margin-top: 20px;
+    margin-right: 10px;
 }
- .hamburger__bars {
-	 position: absolute;
-	 width: 30px;
-	 height: 3px;
-   
-	 background-color: #d8dbdb;
-	 transition: transform 220ms ease-in-out;
-     z-index: 99999999999999999;
+
+.hamburger__bars {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+
+    background-color: #d8dbdb;
+    transition: transform 220ms ease-in-out;
+    z-index: 99999999999999999;
 }
+
 .hamburger__container:hover {
     transform: scale(1.1);
 }
-.hamburger__bars:before, .hamburger__bars:after {
-	 display: block;
-	 position: absolute;
-	 width: 30px;
-	 height: 3px;
-	 background-color: #d8dbdb;
-   border-radius: 15px;
-	 content: '';
-}
-.hamburger__bars:before {
-	 top: -12px;
-     background-color: #d8dbdb;
-	 transition: top 100ms 250ms ease-in, transform 220ms ease-in-out;
-}
+
+.hamburger__bars:before,
 .hamburger__bars:after {
-	 bottom: -12px;
-	 transition: bottom 100ms 250ms ease-in, transform 220ms ease-in-out;
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #d8dbdb;
+    border-radius: 15px;
+    content: '';
 }
+
+.hamburger__bars:before {
+    top: -12px;
+    background-color: #d8dbdb;
+    transition: top 100ms 250ms ease-in, transform 220ms ease-in-out;
+}
+
+.hamburger__bars:after {
+    bottom: -12px;
+    transition: bottom 100ms 250ms ease-in, transform 220ms ease-in-out;
+}
+
 .hamburger--active .hamburger__bars {
-	 transform: rotate(225deg);
-	 transition: transform 220ms 120ms ease-in-out;
+    transform: rotate(225deg);
+    transition: transform 220ms 120ms ease-in-out;
 }
+
 .hamburger--active .hamburger__bars:before {
-	 top: 0;
-	 transition: top 100ms ease-out;
-   background-color: #feffff;
+    top: 0;
+    transition: top 100ms ease-out;
+    background-color: #feffff;
 }
+
 .hamburger--active .hamburger__bars:after {
-	 bottom: 0;
-	 transform: rotate(-90deg);
-	 transition: bottom 100ms ease-out, transform 220ms 120ms ease-in-out;
-   background-color: #feffff;
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 100ms ease-out, transform 220ms 120ms ease-in-out;
+    background-color: #feffff;
 }
-.hamburger:focus, .hamburger__container:focus {
-	 outline: none;
+
+.hamburger:focus,
+.hamburger__container:focus {
+    outline: none;
 }
+
 .buttons_hamb {
-   display: flex;
+    display: flex;
 }
+
 /*end hamburger*/
 
 .menu {
@@ -203,6 +220,7 @@ header nav ul li a:hover::after {
     color: #fefefe;
     transition: width 0.4s ease-in-out;
 }
+
 .menu ul {
     display: block;
     margin: 0 auto;
@@ -215,13 +233,15 @@ header nav ul li a:hover::after {
     align-items: center;
     margin-right: -100px;
 }
+
 .menu li {
     margin-top: 40px;
     font-weight: 300;
     letter-spacing: 1px;
-    cursor:pointer;
+    cursor: pointer;
     font-family: 'Inter';
 }
+
 section.workouts {
     width: 100%;
     padding: 180px 64px 0 121px;
@@ -452,8 +472,9 @@ section.workouts .workout_opportunities .box-3 .text_3 span {
     letter-spacing: 1px;
     color: rgba(239, 237, 232, 0.65);
 }
+
 section.workouts .workout-opportunities_mob-version {
-   display: none;
+    display: none;
 }
 
 section.workouts .features {
@@ -570,28 +591,30 @@ section.start .owl-carousel .box .descr span.dot-3 {
     position: absolute;
     right: 68px;
 }
+
 .responsive-carousel {
     display: none;
 }
+
 .carousel-item {
     text-align: center;
     padding: 40px;
-  }
+}
 
-  .carousel-item .box {
+.carousel-item .box {
     background-color: #f5f5f5;
     padding: 20px;
     border-radius: 10px;
-  }
+}
 
-  .carousel-item .txt {
+.carousel-item .txt {
     font-size: 24px;
     font-weight: bold;
-  }
+}
 
-  .carousel-item .descr {
+.carousel-item .descr {
     margin-top: 10px;
-  }
+}
 
 section.opportunities {
     padding: 0px 64px 200px 64px;
@@ -618,29 +641,29 @@ section.opportunities .opportunities-items .at_home_txt {
     padding: 162px 0px 129px 69px;
 }
 
-  .txt {
+.txt {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
-  }
-  
-  .descr {
+}
+
+.descr {
     font-size: 14px;
     color: #555555;
-  }
-  
-  .dot-1 {
+}
+
+.dot-1 {
     color: #555555;
-  }
-  
-  .dot-2 {
+}
+
+.dot-2 {
     color: #555555;
-  }
-  
-  .dot-3 {
+}
+
+.dot-3 {
     color: #555555;
-  }
-  
+}
+
 section.opportunities .opportunities-items .at_home_txt .work-txt {
     font-family: 'Inter';
     font-style: normal;
@@ -711,26 +734,31 @@ section.opportunities .opportunities-items .at_home_img img {
 section.opportunities .opportunities-items .at_home_img img:hover {
     transform: scale(1.04);
 }
+
 section.opportunities .opportunities-items .get_programs-img {
     width: 90%;
     margin-top: 121px;
     overflow: hidden;
     transition: 0.5s;
 }
+
 section.opportunities .opportunities-items .get_programs-img img:hover {
     transform: scale(1.04);
 }
+
 section.opportunities .opportunities-items .get_programs-img img {
     height: 100%;
     width: 100%;
     object-fit: contain;
     transition: 0.5s;
 }
+
 section.opportunities .opportunities-items .get_programs-img:hover {
     border-radius: 20px 20px 20px 20px;
     box-shadow: 1px 1px 20px #FFFFFF;
 
 }
+
 section.opportunities .opportunities-items .get_programs-img-mob {
     width: 100%;
     margin-top: 121px;
@@ -771,6 +799,7 @@ section.opportunities .opportunities-items .get_programs .get-txt {
     letter-spacing: 0.83px;
     color: #FAFAF9;
 }
+
 section.opportunities .opportunities-items .get_programs .get-descr {
     max-width: 503px;
     font-family: 'Inter';
@@ -963,182 +992,215 @@ section.membership .back_items:hover {
     transform: scale(1.01);
     border-radius: 10px;
 }
-.footer-section .single-cta{
+
+.footer-section .single-cta {
     color: #eee9e9;
+    font-family: 'Inter';
+    font-weight: 600;
+    cursor: pointer;
 }
-.footer-section .single-cta span{
+
+.footer-section .single-cta span {
     display: block;
     color: #737373;
     margin-top: 10px;
+    font-family: 'Inter';
+    font-weight: 600;
+    cursor: pointer;
 }
-.footer-section .single-cta .fas{
+
+.footer-section .single-cta .fas {
     display: block;
     color: #eee9e9;
     margin-top: 30px;
     margin-bottom: 10px;
 }
-.site-footer
-{
-  background-color:#000000;
-  padding:45px 0 20px;
-  font-size:15px;
-  line-height:24px;
-  color:#737373;
+
+.site-footer {
+    background-color: #000000;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+    font-family: 'Inter';
+    font-weight: 600;
+    cursor: pointer;
 }
-.site-footer hr
-{
-  border-top-color:#bbb;
-  opacity:0.5
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5;
 }
-.site-footer hr.small
-{
-  margin:20px 0px;
+
+.site-footer hr.small {
+    margin: 20px 0px;
 }
-.site-footer h6
-{
-  color:#fff;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px;
+    font-family: 'Inter';
+    font-weight: 600;
+    cursor: pointer;
 }
-.site-footer a
-{
-  color:#737373;
+
+.site-footer a {
+    color: #737373;
+    font-family: 'Inter';
+    font-weight: 600;
 }
-.site-footer a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
+
+.site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
 }
-.footer-links
-{
-  padding-left:0;
-  list-style:none
+
+.footer-links {
+    padding-left: 0;
+    list-style: none;
+    cursor: pointer;
 }
-.footer-links li
-{
-  display:block
+
+.footer-links li {
+    display: block;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-weight: 600;
 }
-.footer-links a
-{
-  color:#737373
+
+.footer-links a {
+    color: #737373;
+    font-family: 'Inter';
+    font-weight: 600;
 }
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
 }
-.footer-links.inline li
-{
-  display:inline-block
+
+.footer-links.inline li {
+    display: inline-block;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-weight: 600;
 }
-.site-footer .social-icons
-{
-  text-align:right
+
+.site-footer .social-icons {
+    text-align: right;
 }
-.site-footer .social-icons a
-{
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:0;
-  border-radius:100%;
-  background-color:#33353d
+
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d;
+    font-family: 'Inter';
+    font-weight: 600;
 }
-.copyright-text
-{
-  margin:0
+
+.copyright-text {
+    margin: 0;
+    font-family: 'Inter';
+    font-weight: 600;
 }
-@media (max-width:991px)
-{
-  .site-footer [class^=col-]
-  {
-    margin-bottom:30px
-  }
+
+@media (max-width:991px) {
+    .site-footer [class^=col-] {
+        margin-bottom: 30px
+    }
 }
-@media (max-width:767px)
-{
-  .site-footer
-  {
-    padding-bottom:0
-  }
-  .site-footer .copyright-text,.site-footer .social-icons
-  {
-    text-align:center
-  }
+
+@media (max-width:767px) {
+    .site-footer {
+        padding-bottom: 0
+    }
+
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center
+    }
 }
-.social-icons
-{
-  padding-left:0;
-  margin-bottom:0;
-  list-style:none
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
 }
-.social-icons li
-{
-  display:inline-block;
-  margin-bottom:4px
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
 }
-.social-icons li.title
-{
-  margin-right:15px;
-  text-transform:uppercase;
-  color:#f2e1e1;
-  font-weight:700;
-  font-size:13px
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #f2e1e1;
+    font-weight: 700;
+    font-size: 13px
 }
-.social-icons a{
-  background-color:#eceeef;
-  color:#818a91;
-  font-size:16px;
-  display:inline-block;
-  line-height:44px;
-  width:44px;
-  height:44px;
-  text-align:center;
-  margin-right:8px;
-  border-radius:100%;
-  -webkit-transition:all .2s linear;
-  -o-transition:all .2s linear;
-  transition:all .2s linear
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
 }
-.social-icons a:active,.social-icons a:focus,.social-icons a:hover
-{
-  color:#fff;
-  background-color:#29aafe
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe
 }
-.social-icons.size-sm a
-{
-  line-height:34px;
-  height:34px;
-  width:34px;
-  font-size:14px
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
 }
-.social-icons a.facebook:hover
-{
-  background-color:#3b5998
+
+.social-icons a.facebook:hover {
+    background-color: #3b5998
 }
-.social-icons a.twitter:hover
-{
-  background-color:#00aced
+
+.social-icons a.twitter:hover {
+    background-color: #00aced
 }
-.social-icons a.linkedin:hover
-{
-  background-color:#007bb6
+
+.social-icons a.linkedin:hover {
+    background-color: #007bb6
 }
-.social-icons a.dribbble:hover
-{
-  background-color:#ea4c89
+
+.social-icons a.dribbble:hover {
+    background-color: #ea4c89
 }
-@media (max-width:767px)
-{
-  .social-icons li.title
-  {
-    display:block;
-    margin-right:0;
-    font-weight:600
-  }
+
+@media (max-width:767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+    }
 }
 
 /* @media only screen and (max-width: 992px) {
@@ -1451,6 +1513,7 @@ section.membership .back_items:hover {
     header nav ul {
         display: none;
     }
+
     .hamb_sticky {
         display: block;
     }
@@ -1477,22 +1540,28 @@ section.membership .back_items:hover {
     }
 
     section.workouts .title {
-        font-size: 50px;
+        font-size: 60px;
         line-height: 60px;
-        letter-spacing: 1px;
+        letter-spacing: 5px;
+        text-align: center;
+        width: 100%;
     }
 
     section.workouts .sub_title {
         font-size: 13px;
         line-height: 24px;
         letter-spacing: 0.5px;
+        text-align: center;
+        font-style: oblique;
     }
 
     section.workouts button {
         width: 150px;
         height: 50px;
-        margin-top: 90px;
         transition: 0.5s;
+        display: block;
+        margin: 0 auto;
+        margin-top: 90px;
     }
 
     section.workouts button:hover {
@@ -1506,11 +1575,12 @@ section.membership .back_items:hover {
     section.workouts button a {
         font-size: 15px;
     }
-    
+
     section.workouts .features {
         margin-top: 150px;
         margin-bottom: 30px;
     }
+
     section.workouts .features .feature_text {
         font-size: 16px;
     }
@@ -1546,10 +1616,11 @@ section.membership .back_items:hover {
         width: 100%;
         transition: 0.5s;
     }
+
     section.workouts .workout-opportunities_mob-version img.men:hover {
         transform: scale(1.02);
     }
-    
+
     section.workouts .workout-opportunities_mob-version .boxes {
         width: 100%;
         display: flex;
@@ -1562,7 +1633,7 @@ section.membership .back_items:hover {
     }
 
     section.workouts .workout-opportunities_mob-version .box-1 {
-        width: 150px;
+        max-width: 150px;
         height: 90px;
         padding: 15px 20px;
         background: #EF8964;
@@ -1590,7 +1661,7 @@ section.membership .back_items:hover {
     }
 
     section.workouts .workout-opportunities_mob-version .box-2 {
-        width: 160px;
+        max-width: 160px;
         height: 96px;
         padding: 15px 20px;
         margin-top: 30px;
@@ -1623,7 +1694,7 @@ section.membership .back_items:hover {
     }
 
     section.workouts .workout-opportunities_mob-version .box-3 {
-        width: 150px;
+        max-width: 150px;
         padding: 25px 22px;
         margin-top: 30px;
         height: 90px;
@@ -1657,14 +1728,17 @@ section.membership .back_items:hover {
         min-height: 280px;
         padding: 50px 0px 50px 0px;
     }
+
     section.start {
         width: 100%;
         min-height: 280px;
         padding: 50px 0 0px 30px;
     }
+
     section.start .owl-carousel {
         display: none;
     }
+
     section.start .start_title {
         font-size: 30px;
     }
@@ -1673,6 +1747,7 @@ section.membership .back_items:hover {
         font-size: 14px;
         line-height: 20px;
     }
+
     section.start .responsive-carousel .box {
         width: 304px;
         min-height: 190px;
@@ -1682,13 +1757,13 @@ section.membership .back_items:hover {
         transition: 0.5s;
         margin: 0 auto;
     }
-    
+
     section.start .responsive-carousel .box:hover {
         transform: scale(1.02);
         box-shadow: 2px 2px 50px #232532;
         cursor: pointer;
     }
-    
+
     section.start .responsive-carousel .box .txt {
         font-family: 'Inter';
         font-style: normal;
@@ -1699,7 +1774,7 @@ section.membership .back_items:hover {
         color: #FAFAF9;
         text-align: left;
     }
-    
+
     section.start .responsive-carousel .box .descr {
         position: relative;
         font-family: 'Inter';
@@ -1712,35 +1787,36 @@ section.membership .back_items:hover {
         margin-top: 12px;
         text-align: left;
     }
-    
+
     section.start .responsive-carousel .box .descr span {
         position: absolute;
         right: 7px;
     }
-    
+
     section.responsive-carousel {
         display: none;
     }
+
     .carousel-item {
         text-align: center;
         padding: 40px;
-      }
-    
-      .carousel-item .box {
+    }
+
+    .carousel-item .box {
         background-color: #000000;
         padding: 20px;
         border-radius: 10px;
-      }
-    
-      .carousel-item .txt {
+    }
+
+    .carousel-item .txt {
         font-size: 24px;
         font-weight: bold;
-      }
-    
-      .carousel-item .descr {
+    }
+
+    .carousel-item .descr {
         margin-top: 10px;
-      }
-    
+    }
+
     section.start .start_boxes {
         flex-wrap: wrap;
     }
@@ -1787,8 +1863,9 @@ section.membership .back_items:hover {
     }
 
     section.opportunities .opportunities-items .get_programs-img {
-       display: none;
+        display: none;
     }
+
     section.opportunities .opportunities-items .get_programs-img-mob {
         width: 100%;
         margin-top: 110px;
@@ -1796,12 +1873,14 @@ section.membership .back_items:hover {
         transition: 0.5s;
         display: block;
     }
+
     section.opportunities .opportunities-items .get_programs-img-mob img {
         height: 100%;
         width: 100%;
         object-fit: cover;
         transition: 0.5s;
     }
+
     section.opportunities .opportunities-items .get_programs-img img {
         height: 100%;
         width: 100%;
@@ -1899,6 +1978,7 @@ section.membership .back_items:hover {
         font-size: 14px;
         margin-top: 50px;
     }
+
     section.membership .member_items .plus .join-club {
         margin-top: 30px;
         font-size: 16px;
@@ -1925,6 +2005,7 @@ section.membership .back_items:hover {
         font-size: 15px;
         line-height: 22px;
     }
+
     footer.footer-section {
         padding: 50px 30px 0 30px;
     }
