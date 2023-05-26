@@ -993,158 +993,120 @@ section.membership .back_items:hover {
     border-radius: 10px;
 }
 
-.footer-section .single-cta {
-    color: #eee9e9;
-    font-family: 'Inter';
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.footer-section .single-cta span {
-    display: block;
-    color: #737373;
-    margin-top: 10px;
-    font-family: 'Inter';
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.footer-section .single-cta .fas {
-    display: block;
-    color: #eee9e9;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-.site-footer {
-    background-color: #000000;
-    padding: 45px 0 20px;
-    font-size: 15px;
-    line-height: 24px;
-    color: #737373;
-    font-family: 'Inter';
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.site-footer hr {
-    border-top-color: #bbb;
-    opacity: 0.5;
-}
-
-.site-footer hr.small {
-    margin: 20px 0px;
-}
-
-.site-footer h6 {
+footer {
+    background-color: #000;
     color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin-top: 5px;
-    letter-spacing: 2px;
-    font-family: 'Inter';
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.site-footer a {
-    color: #737373;
-    font-family: 'Inter';
-    font-weight: 600;
-}
-
-.site-footer a:hover {
-    color: #3366cc;
-    text-decoration: none;
-}
-
-.footer-links {
-    padding-left: 0;
+    padding:  0;
+  }
+  
+  footer h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    margin-top: 30px;
+  }
+  
+  footer h3.contact {
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  footer p.email,  footer p.phone{
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  footer h3.follow {
+    text-align: center;
+    margin-top: 30px;
+  }
+  footer ul.social-icons {
     list-style: none;
-    cursor: pointer;
-}
-
-.footer-links li {
-    display: block;
-    font-family: 'Inter';
-    font-weight: 600;
-    font-weight: 600;
-}
-
-.footer-links a {
-    color: #737373;
-    font-family: 'Inter';
-    font-weight: 600;
-}
-
-.footer-links a:active,
-.footer-links a:focus,
-.footer-links a:hover {
-    color: #3366cc;
-    text-decoration: none;
-}
-
-.footer-links.inline li {
-    display: inline-block;
-    font-family: 'Inter';
-    font-weight: 600;
-    font-weight: 600;
-}
-
-.site-footer .social-icons {
-    text-align: right;
-}
-
-.site-footer .social-icons a {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    margin-left: 6px;
-    margin-right: 0;
-    border-radius: 100%;
-    background-color: #33353d;
-    font-family: 'Inter';
-    font-weight: 600;
-}
-
-.copyright-text {
+    padding: 0px;
     margin: 0;
-    font-family: 'Inter';
-    font-weight: 600;
-}
-
-@media (max-width:991px) {
-    .site-footer [class^=col-] {
-        margin-bottom: 30px
-    }
-}
-
-@media (max-width:767px) {
-    .site-footer {
-        padding-bottom: 0
-    }
-
-    .site-footer .copyright-text,
-    .site-footer .social-icons {
-        text-align: center
-    }
-}
-
-.social-icons {
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none
-}
-
-.social-icons li {
+    text-align: end;
+  }
+  
+  footer ul.social-icons li {
     display: inline-block;
-    margin-bottom: 4px
-}
+    margin-right: 10px;
+  
+  }
+
+  footer ul.social-icons li:last-child {
+    margin-right: 0;
+  }
+  
+  footer ul.social-icons a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin-left: 6px;
+        margin-right: 0;
+        border-radius: 100%;
+        background-color: #33353d;
+        font-family: 'Inter';
+        font-weight: 600
+  }
+
+  footer hr {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #777;
+  }
+  
+  footer p.text-center {
+    font-size: 14px;
+    color: #FAFAF9;
+  }
+  
+  footer {
+    background-color: #000;
+    color: #FAFAF9;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  footer h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #FAFAF9;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+  
+  footer ul.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer ul.social-icons li {
+    margin-right: 10px;
+  }
+  
+  footer ul.social-icons li:last-child {
+    margin-right: 0;
+  }
+  
+  footer ul.social-icons a {
+    color: #FAFAF9;
+    font-size: 20px;
+  }
+  
+
+ 
 
 .social-icons li.title {
     margin-right: 15px;
     text-transform: uppercase;
-    color: #f2e1e1;
+    color: #FAFAF9;
     font-weight: 700;
     font-size: 13px
 }
@@ -1176,7 +1138,7 @@ section.membership .back_items:hover {
     line-height: 34px;
     height: 34px;
     width: 34px;
-    font-size: 14px
+    font-size: 14px;
 }
 
 .social-icons a.facebook:hover {
@@ -1194,7 +1156,29 @@ section.membership .back_items:hover {
 .social-icons a.dribbble:hover {
     background-color: #ea4c89
 }
-
+  
+footer hr {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #777;
+  }
+  
+  footer p.text-center {
+    font-size: 14px;
+    color: #ccc;
+  }
+  @media (max-width: 768px) {
+    footer h3 {
+      font-size: 18px;
+      margin-top: 40px;
+    }
+  
+    footer ul.social-icons {
+      margin-top: 10px;
+    }
+  }
+  
 @media (max-width:767px) {
     .social-icons li.title {
         display: block;
@@ -1509,7 +1493,33 @@ section.membership .back_items:hover {
     }   
 
 } */
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 728px) {
+    header nav ul {
+        display: none;
+    }
+    /* .menu {
+        display: block; 
+    } */
+    section.heading {
+        padding: 80px 50px 0 50px;
+    }
+    section.workouts {
+        padding: 100px 50px 0 50px;
+        display: block;
+    }
+    /* section.workouts .workout_items {
+        display: block;
+    } */
+    section.workouts .title {
+        font-size: 60px;
+        line-height: 60px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+
+}
+@media only screen and (max-width: 556px) {
     header nav ul {
         display: none;
     }
@@ -1920,6 +1930,7 @@ section.membership .back_items:hover {
 
     section.membership .member_items .member-title {
         font-size: 35px;
+        text-align: center;
     }
 
     section.membership .member_items .member-blocks {
@@ -1932,6 +1943,8 @@ section.membership .back_items:hover {
         max-width: 350px;
         padding: 50px 50px 0px 50px;
         min-height: 100%;
+        display: block;
+        margin: 0 auto;
     }
 
     section.membership .member_items .plus {
@@ -2006,10 +2019,15 @@ section.membership .back_items:hover {
         line-height: 22px;
     }
 
-    footer.footer-section {
+    footer{
         padding: 50px 30px 0 30px;
     }
 
+}
+@media only screen and (min-width: 729px) {
+    .menu {
+        display: none;
+    }
 }
 
 
@@ -2018,31 +2036,16 @@ section.membership .back_items:hover {
 
 
 /* @media only screen and (max-width: 749px) {
-    header nav ul {
-        display: none;
-    }
+    
 
-    section.heading {
-        padding: 80px 50px 0 50px;
-    }
+   
 
-    section.workouts {
-        padding: 180px 50px 0 50px;
-        display: block;
-    }
-
-    section.workouts .workout_items {
-        display: block;
-    }
-
+    
+   
     section.workouts .workout_items .workout_text {
         position: static;
     }
-    section.workouts .title {
-        font-size: 60px;
-        line-height: 60px;
-        letter-spacing: 1px;
-    }
+    
 
     section.workouts .sub_title {
         font-size: 13px;
