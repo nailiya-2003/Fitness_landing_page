@@ -997,6 +997,7 @@ footer {
     background-color: #000;
     color: #fff;
     padding:  0;
+    cursor: pointer;
   }
   
   footer h3 {
@@ -1996,28 +1997,24 @@ footer hr {
         margin-top: 30px;
         font-size: 16px;
     }
-
-    #scrollToTop {
-        z-index: 9;
-        position: fixed;
-        bottom: 5%;
-        right: 2%;
-        display: none;
-        font-size: 20px;
-        padding: 10px 16px;
-    }
-
-    section.membership .back a {
-        width: 130px;
-        height: 30px;
+    section.membership .back .back_items {
+        width: 40px;
+        height: 40px;
+        background: #ffffff;
+        border-radius: 50%;
+        border: 5px #8b8a8a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
         float: right;
-        margin-top: 50px;
-    }
-
-    section.membership .back a {
-        font-size: 15px;
-        line-height: 22px;
-    }
+        transition: 0.5s;
+        cursor: pointer;
+      }
+    
+      section.membership .back-txt {
+        display: none;
+      }
 
     footer{
         padding: 50px 30px 0 30px;
