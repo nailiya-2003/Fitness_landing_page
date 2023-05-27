@@ -56,6 +56,9 @@ animateDecimal(4.95, 2000, 'out');
 animateInteger(500, 3000, 'out-mob1');
 animateInteger(350, 2500, 'out-mob2');
 animateDecimal(4.95, 2000, 'out-mob3');
+animateInteger(500, 3000, 'outlap1');
+animateInteger(350, 2500, 'outlap2');
+animateDecimal(4.95, 2000, 'outlap3');
 
 
 $(document).ready(function () {
@@ -100,19 +103,7 @@ $(document).ready(function () {
         autoplayHoverPause: true,
         rtl: true
       });
-    // } else if (viewportWidth < 992) {
-    //   // Средние экраны (от 768px до 991px)
-    //   $('.owl-carousel').trigger('destroy.owl.carousel');
-    //   $('.owl-carousel').removeClass('owl-loaded');
-    //   $('.owl-carousel').owlCarousel({
-    //     items: 3,
-    //     loop: true,
-    //     nav: true,
-    //     autoplay: true,
-    //     autoplayTimeout: 2000,
-    //     autoplayHoverPause: true,
-    //     rtl: true
-    //   });
+ 
 
     } else {
       // Большие экраны (992px и выше)

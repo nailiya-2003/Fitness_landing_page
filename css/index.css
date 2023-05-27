@@ -215,7 +215,7 @@ header nav ul li a:hover::after {
     right: 0px;
     top: 0;
     bottom: 0;
-    z-index: 0;
+    z-index: 1;
     width: 0;
     color: #fefefe;
     transition: width 0.4s ease-in-out;
@@ -306,7 +306,6 @@ section.workouts button a {
     color: #FFFFFF;
     text-decoration: none;
 }
-
 section.workouts .workout_opportunities {
     position: absolute;
     top: 57px;
@@ -474,6 +473,9 @@ section.workouts .workout_opportunities .box-3 .text_3 span {
 }
 
 section.workouts .workout-opportunities_mob-version {
+    display: none;
+}
+section.workouts .workout_opportunities_lap-version {
     display: none;
 }
 
@@ -1188,49 +1190,36 @@ footer p.text-center {
 footer p.text-center:hover {
     color: #ffffff;
 }
-@media (max-width: 768px) {
-    footer h3 {
-        font-size: 18px;
-        margin-top: 40px;
-    }
-
-    footer ul.social-icons {
-        margin-top: 10px;
-    }
-    .social-icons li.title {
-        display: block;
-        margin-right: 0;
-        font-weight: 600;
-    }
-}
-
-@media (max-width:767px) {
-   
-}
-
-/* @media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     header nav ul {
         display: none;
     }
-
     section.heading {
         padding: 50px 50px 0 50px;
+        background:rgba(23, 23, 23, 0.6);
     }
-
-    section.workouts {
-        padding: 180px 50px 0 50px;
+    .hamb_sticky {
+        display: block;
+        margin-top: 3px;
+    }
+    .menu {
         display: block;
     }
-
+    section.workouts {
+        padding: 150px 0px 0 0px;
+        display: block;
+        z-index: 0;
+        background-image: linear-gradient(to left, rgba(23, 23, 23, 0.6) 26.48%, rgba(23, 23, 23, 0.6) 73.52%),url("https://i.pinimg.com/564x/0e/61/4c/0e614cb1fef93ee87db7ad240590289f.jpg");
+        background-repeat: no-repeat;
+        background-position: right 60px , top 40px;
+        background-size: 100%;
+    }
+    
     section.workouts .workout_items {
         display: block;
     }
-
-    section.workouts .workout_items .workout_text {
-        position: static;
-    }
     section.workouts .title {
-        font-size: 60px;
+        font-size: 68px;
         line-height: 60px;
         letter-spacing: 1px;
     }
@@ -1242,83 +1231,195 @@ footer p.text-center:hover {
     }
 
     section.workouts button {
-        width: 160px;
+        max-width: 80%;
         height: 60px;
+
     }
     section.workouts button a {
         font-size: 15px;
     }
+   
 
     section.workouts .workout_opportunities {
-        position: static;
-        margin-top: 150px;
-        margin-bottom: 150px;
+        display:none;  
+    }
+    section.workouts .workout_opportunities_lap-version {
         display: flex;
-        width: 100%;
-        gap: 3rem;
         align-items: center;
         justify-content: center;
-    }
-    section.workouts .workout_opportunities .men_img {
         width: 100%;
-        right: 2px;
-        background-color: #2e2e2e;
-        border-radius: 20px;
-        padding: 50px 20px;
+        margin-top: 100px;
+        gap: 100px;
+
     }
-    section.workouts .workout_opportunities img.men {
-        position: relative;
+    section.workouts .workout_opportunities_lap-version .men {
         width: 100%;
-        right: 0px;
+        transition: 0.5s;
+        display: block;
+        margin-top: 50px;
+    }
+    section.workouts .workout_opportunities_lap-version .men:hover {
+        transform: scale(1.02);
+    }
+    section.workouts .workout_opportunities_lap-version .boxes {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 50px;
     }
 
-    section.workouts .workout_opportunities .box-1 {
-        width: 150px;
+    section.workouts .workout_opportunities_lap-version .box-1 {
+        max-width: 200px;
         height: 90px;
         padding: 15px 20px;
-        position: static;   
+        background: #EF8964;
+        border-radius: 12px;
+        cursor: pointer;
     }
 
-    section.workouts .workout_opportunities .box-1 .text_1 {
+    section.workouts .workout_opportunities_lap-version .box-1 .text_1 {
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: -2px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        color: #FAFAF9;
+        
+    }
+
+    section.workouts .workout_opportunities_lap-version .box-1 .text_1 span {
+        font-size: 16px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        color: rgba(239, 237, 232, 0.65);
+    }
+
+    section.workouts .workout_opportunities_lap-version .box-2 {
+        max-width: 200px;
+        height: 100px;
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        height: 96px;
+        background: #303030;
+        border-radius: 12px;
+        cursor: pointer;
+        margin-top: 0px;
+    }
+
+    section.workouts .workout_opportunities_lap-version .box-2 .text_2 {
+        font-size: 19px;
+        line-height: 20px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+        color: #FAFAF9;
+    }
+
+    section.workouts .workout_opportunities_lap-version .box-2 .text_2 span {
+        font-size: 13px;
+        line-height: 20px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        color: rgba(239, 237, 232, 0.65);
+    }
+
+    section.workouts .workout_opportunities_lap-version .box-3 {
+        max-width: 130px;
+        padding: 20px 22px;
+        height: 90px;
+        background: #7A29DC;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+
+    section.workouts .workout_opportunities_lap-version .box-3 .text_3 {
+        font-size: 30px;
+        line-height: 20px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #FAFAF9;
+    }
+
+    section.workouts .workout_opportunities_lap-version .box-3 .text_3 span {
+        font-size: 11px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 5px;
+        letter-spacing: 1px;
+        color: rgba(239, 237, 232, 0.65);
+    }
+    section.workouts .workout_opportunities_lap-version .box-1 .text_1 {
         font-size: 30px;
         line-height: 40px;
         letter-spacing: -2px;
     }
 
-    section.workouts .workout_opportunities .box-1 .text_1 span {
+    section.workouts .workout_opportunities_lap-version .box-1 .text_1 span {
         font-size: 16px;
     }
-    section.workouts .workout_opportunities .box-2 {
-        width: 187px;
-        height: 96px;
-        padding: 15px 20px;
-        position: static;
-        margin-top: 30px;
-    }
-    section.workouts .workout_opportunities .box-2 .text_2 {
+  
+    section.workouts .workout_opportunities_lap-version .box-2 .text_2 {
         font-size: 19px;
         line-height: 20px;
     }
-    section.workouts .workout_opportunities .box-2 .text_2 span {
+    section.workouts .workout_opportunities_lap-version .box-2 .text_2 span {
         font-size: 13px;
         line-height: 20px;
     }
-    section.workouts .workout_opportunities .box-3 {
-        width: 170px;
-        padding: 25px 22px;
-        position: static;
-        margin-top: 30px;
-        height: 90px;
-    }
+   
 
-    section.workouts .workout_opportunities .box-3 .text_3 {
+    section.workouts .workout_opportunities_lap-version .box-3 .text_3 {
         font-size: 30px;
         line-height: 20px;
     }
 
-    section.workouts .workout_opportunities .box-3 .text_3 span {
+    section.workouts .workout_opportunities_lap-version .box-3 .text_3 span {
         font-size: 10px;
     }
+    section.opportunities .opportunities-items .get_programs-img {
+        display: none;
+    }
+    
+    section.opportunities .opportunities-items .forlaptop{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    section.opportunities .opportunities-items .get_programs-img-mob{
+        width: 100%;
+        margin-top: 110px;
+        overflow: hidden;
+        transition: 0.5s;
+        display: block;
+        
+        transition: 1s;
+    
+       
+    }
+
+    section.opportunities .opportunities-items .get_programs-img-mob {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+
     section.start {
         width: 100%;
         min-height: 280px;
@@ -1342,11 +1443,13 @@ footer p.text-center:hover {
 
     section.start .start_title {
         font-size: 30px;
+        text-align: center;
     }
 
     section.start .start_subtitle {
         font-size: 14px;
         line-height: 20px;
+        text-align: center;
     }
     section.start .start_boxes {
         flex-wrap: wrap;
@@ -1364,24 +1467,36 @@ footer p.text-center:hover {
         align-items: center;
         justify-content: center;
         position: relative;
+
     }
     section.opportunities .opportunities-items {
         flex-direction: column;
     }
-
+    
     section.opportunities .opportunities-items .at_home_txt {
         width: 100%;
         padding: 100px 20px 90px 10px;
+        text-align: center;
+
+    }
+    section.opportunities .opportunities-items .at_home_txt .see-more {
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
     }
 
     section.opportunities .opportunities-items .at_home_txt .work-txt {
         font-size: 35px;
         line-height: 40px; 
+        text-align: center;
+        
     }
 
     section.opportunities .opportunities-items .at_home_txt .work-descr {
         width: 100%;
         font-size: 14px;
+        text-align: center;
+        max-width: 100%;
     }
 
     section.opportunities .opportunities-items .at_home_img:hover {
@@ -1398,8 +1513,7 @@ footer p.text-center:hover {
         background-color: transparent;
         order: 4;
         width: 100%;
-        margin-top: 6rem;
-        
+        margin-top: 6rem;    
     }
 
     section.opportunities .opportunities-items .get_programs-img img {
@@ -1414,21 +1528,28 @@ footer p.text-center:hover {
         transform: scale(1.04);
         box-shadow: 1px 1px 15px #FFFFFF;
     }
-
     section.opportunities .opportunities-items .get_programs {
         width: 100%;
         margin-top: 121px;
         padding: 0px 20px 0px 10px;
     }
+    section.opportunities .get_programs .see {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
 
     section.opportunities .opportunities-items .get_programs .get-txt {
         font-size: 35px;
         line-height: 45px;
+        text-align: center;
     }
 
     section.opportunities .opportunities-items .get_programs .get-descr {
         font-size: 14px;
         line-height: 24px;
+        text-align: center;
+        max-width: 100%;
     }
 
     section.membership {
@@ -1436,7 +1557,13 @@ footer p.text-center:hover {
     }
 
     section.membership .member_items {
-        padding: 0px 77px 0px 30px;
+        padding: 0px 30px 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
     }
 
     section.membership .member_items .member-title {
@@ -1445,7 +1572,9 @@ footer p.text-center:hover {
 
     section.membership .member_items .member-blocks {
         flex-wrap: wrap;
+        flex-direction: column;
         gap: 3rem;
+       
     }
 
     section.membership .member_items .free,
@@ -1463,17 +1592,19 @@ footer p.text-center:hover {
     section.membership .member_items .free .join-txt,
     .plus-txt {
         font-size: 25px;
+        text-align: center;
     }
 
     section.membership .member_items .free .plus-txt {
         font-size: 20px;
-
+        text-align: center;
     }
 
     section.membership .member_items .free .join-descr,
     .plus-descr {
         font-size: 16px;
         margin-top: 80px;
+        text-align: center;
     }
 
     section.membership .member_items .free .join-points,
@@ -1482,23 +1613,39 @@ footer p.text-center:hover {
         line-height: 22px;
         max-width: 404px;
         margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
     }
 
     section.membership .member_items .plus-points {
         font-size: 15px;
         line-height: 22px;
         max-width: 404px;
+       
     }
 
     section.membership .member_items .free .plus-points {
         font-size: 15px;
         line-height: 22px;
         max-width: 404px;
+       
     }
 
     section.membership .member_items .free .see-more {
         font-size: 16px;
         margin-top: 50px;
+     
+    }
+    .see {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .join-club {
+        display: block;
+        margin: 0 auto;
     }
 
     section.membership .back a {
@@ -1512,9 +1659,27 @@ footer p.text-center:hover {
         font-size: 15px;
         line-height: 22px;
     }   
+}
 
-} */
-@media only screen and (max-width: 728px) {
+@media (max-width: 768px) {
+    footer h3 {
+        font-size: 18px;
+        margin-top: 40px;
+    }
+
+    footer ul.social-icons {
+        margin-top: 10px;
+    }
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
     header nav ul {
         display: none;
     }
@@ -1522,7 +1687,7 @@ footer p.text-center:hover {
     .hamb_sticky {
         display: block;
         margin-top: 35px;
-        z-index: 99999999999999999999999999999;
+        z-index: 99999999999999;
     }
     section.heading {
         padding: 80px 50px 0 50px;
@@ -1956,7 +2121,7 @@ footer p.text-center:hover {
     }
 
     section.workouts {
-        padding: 200px 30px 0px 30px;
+        padding: 150px 30px 0px 30px;
         display: block;
         background-repeat: no-repeat;
         background-size: 100px;
@@ -2445,11 +2610,7 @@ footer p.text-center:hover {
 
 }
 
-@media only screen and (min-width: 729px) {
-    .menu {
-        display: none;
-    }
-}
+
 
 
 
