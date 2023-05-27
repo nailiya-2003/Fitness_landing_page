@@ -219,6 +219,7 @@ header nav ul li a:hover::after {
     width: 0;
     color: #fefefe;
     transition: width 0.4s ease-in-out;
+    display: none;
 }
 
 .menu ul {
@@ -1201,6 +1202,7 @@ footer p.text-center:hover {
     .hamb_sticky {
         display: block;
         margin-top: 3px;
+        z-index: 99999999999999999999999;
     }
     .menu {
         display: block;
