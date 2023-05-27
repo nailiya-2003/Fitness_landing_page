@@ -1197,14 +1197,15 @@ footer p.text-center:hover {
     footer ul.social-icons {
         margin-top: 10px;
     }
-}
-
-@media (max-width:767px) {
     .social-icons li.title {
         display: block;
         margin-right: 0;
         font-weight: 600;
     }
+}
+
+@media (max-width:767px) {
+   
 }
 
 /* @media only screen and (max-width: 992px) {
@@ -1518,9 +1519,11 @@ footer p.text-center:hover {
         display: none;
     }
 
-    /* .menu {
-        display: block; 
-    } */
+    .hamb_sticky {
+        display: block;
+        margin-top: 35px;
+        z-index: 99999999999999999999999999999;
+    }
     section.heading {
         padding: 80px 50px 0 50px;
     }
@@ -1528,18 +1531,412 @@ footer p.text-center:hover {
     section.workouts {
         padding: 100px 50px 0 50px;
         display: block;
+        z-index: 0;
     }
-
-    /* section.workouts .workout_items {
-        display: block;
-    } */
     section.workouts .title {
-        font-size: 60px;
-        line-height: 60px;
+        font-size: 52px;
+        line-height: 55px;
         letter-spacing: 1px;
-        text-align: center;
+        margin-top: 120px;
+    }
+    
+    section.workouts .sub_title {
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        font-style: oblique;
     }
 
+    section.workouts button {
+        width: 80%;
+        height: 60px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 90px;
+    }
+    section.workouts button a {
+        font-size: 15px;
+    }
+
+    section.workouts .workout_opportunities {
+       display: none;
+    }
+    section.workouts .workout_opportunities {
+        display: none;
+    }
+    
+    section.workouts .features img {
+        width: 100%;
+        margin-top: 33px;
+    }
+    section.workouts .workout-opportunities_mob-version {
+        display: block;
+        width: 100%;
+        padding: 80px 0;
+    }
+
+    section.opportunities .workout-opportunities_mob-version .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    section.workouts .workout-opportunities_mob-version .men_img {
+        display: none;
+    }
+
+    section.workouts .workout-opportunities_mob-version .boxes {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    section.workouts .workout-opportunities_mob-version .box-1 {
+        max-width: 200px;
+        height: 90px;
+        padding: 15px 20px;
+        background: #EF8964;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+
+    section.workouts .workout-opportunities_mob-version .box-1 .text_1 {
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: -2px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        color: #FAFAF9;
+        
+    }
+
+    section.workouts .workout-opportunities_mob-version .box-1 .text_1 span {
+        font-size: 16px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        color: rgba(239, 237, 232, 0.65);
+    }
+
+    section.workouts .workout-opportunities_mob-version .box-2 {
+        max-width: 200px;
+        height: 100px;
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        height: 96px;
+        background: #303030;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+
+    section.workouts .workout-opportunities_mob-version .box-2 .text_2 {
+        font-size: 19px;
+        line-height: 20px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+        color: #FAFAF9;
+    }
+
+    section.workouts .workout-opportunities_mob-version .box-2 .text_2 span {
+        font-size: 13px;
+        line-height: 20px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        color: rgba(239, 237, 232, 0.65);
+    }
+
+    section.workouts .workout-opportunities_mob-version .box-3 {
+        max-width: 130px;
+        padding: 20px 22px;
+        height: 90px;
+        background: #7A29DC;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+
+    section.workouts .workout-opportunities_mob-version .box-3 .text_3 {
+        font-size: 30px;
+        line-height: 20px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #FAFAF9;
+    }
+
+    section.workouts .workout-opportunities_mob-version .box-3 .text_3 span {
+        font-size: 11px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 5px;
+        letter-spacing: 1px;
+        color: rgba(239, 237, 232, 0.65);
+    }
+    section.start {
+        width: 100%;
+        min-height: 280px;
+        padding: 50px 0 0px 30px;
+    }
+
+    section.start .owl-carousel {
+        display: none;
+    }
+
+    section.start .start_title {
+        font-size: 30px;
+    }
+
+    section.start .start_subtitle {
+        font-size: 14px;
+        line-height: 20px;
+    }
+                                                                                                                                       
+    .responsive-carousel {
+        display: block;
+        width: 100%;
+        min-height: 280px;
+        padding: 50px 0px 50px 0px;
+    }
+
+    section.start .responsive-carousel .box {
+        max-width: 304px;
+        min-height: 190px;
+        background: #323443;
+        border-radius: 12px;
+        padding: 52px 52px 52px 40px;
+        transition: 0.5s;
+        margin: 0 auto;
+    }
+
+    section.start .responsive-carousel .box:hover {
+        transform: scale(1.02);
+        box-shadow: 2px 2px 50px #232532;
+        cursor: pointer;
+    }
+
+    section.start .responsive-carousel .box .txt {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        color: #FAFAF9;
+        text-align: left;
+    }
+
+    section.start .responsive-carousel .box .descr {
+        position: relative;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        color: rgba(239, 237, 232, 0.65);
+        margin-top: 12px;
+        text-align: left;
+    }
+
+    section.start .responsive-carousel .box .descr span {
+        position: absolute;
+        right: 7px;
+    }
+
+    section.responsive-carousel {
+        display: none;
+    }
+
+    .carousel-item {
+        text-align: center;
+        padding: 40px;
+    }
+
+    .carousel-item .box {
+        background-color: #000000;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .carousel-item .txt {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .carousel-item .descr {
+        margin-top: 10px;
+    }
+
+    section.start .start_boxes {
+        flex-wrap: wrap;
+    }
+
+    section.opportunities {
+        padding: 0px 64px 180px 30px;
+        min-height: 1570px;
+        width: 100%;
+    }
+
+    section.opportunities .opportunities-items .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+    }
+    section.opportunities .opportunities-items {
+        flex-direction: column;
+    }
+    section.opportunities .opportunities-items .at_home_txt {
+        width: 100%;
+        padding: 100px 20px 90px 10px;
+    }
+
+    section.opportunities .opportunities-items .at_home_txt .work-txt {
+        font-size: 35px;
+        line-height: 40px;   
+    }
+
+    section.opportunities .opportunities-items .at_home_txt .work-descr {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    section.opportunities .opportunities-items .at_home_img:hover {
+        box-shadow: 1px 1px 15px #FFFFFF;
+    }
+
+    section.opportunities .opportunities-items .at_home_img img:hover {
+        transform: scale(1.02);
+    }
+
+    section.opportunities .opportunities-items .get_programs-img {
+         display: none;
+    }
+    section.opportunities .opportunities-items .get_programs-img-mob {
+        width: 100%;
+        margin-top: 110px;
+        overflow: hidden;
+        transition: 0.5s;
+        display: block;
+    }
+
+    section.opportunities .opportunities-items .get_programs-img-mob img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+
+    section.opportunities .opportunities-items .get_programs {
+        width: 100%;
+        margin-top: 121px;
+        padding: 0px 20px 0px 10px;
+    }
+
+    section.opportunities .opportunities-items .get_programs .get-txt {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    section.opportunities .opportunities-items .get_programs .get-descr {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    section.membership {
+        padding: 0px 64px 27px 10px;
+    }
+
+    section.membership .member_items {
+        padding: 0px 77px 0px 30px;
+    }
+
+    section.membership .member_items .member-title {
+        font-size: 35px;
+    }
+    
+    section.membership .member_items .member-blocks {
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    section.membership .member_items .free,
+    .plus {
+        max-width:400px ;
+        padding: 50px 50px 0px 50px;
+        min-height: 100%;
+        margin: 0 auto;
+    }
+
+    section.membership .member_items .plus {
+        max-width: 400px;
+        padding: 40px 50px 0px 50px;
+        margin: 0 auto;
+    }
+
+    section.membership .member_items .free .join-txt,
+    .plus-txt {
+        font-size: 25px;
+    }
+
+    section.membership .member_items .free .plus-txt {
+        font-size: 20px;
+
+    }
+
+    section.membership .member_items .free .join-descr,
+    .plus-descr {
+        font-size: 16px;
+        margin-top: 80px;
+    }
+    section.membership .member_items .free .join-points,
+    .plus-points {
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 404px;
+        margin-top: 30px;
+    }
+
+    section.membership .member_items .plus-points {
+        font-size: 13px;
+        line-height: 22px;
+        max-width: 404px;
+    }
+
+    section.membership .member_items .free .plus-points {
+        font-size: 13px;
+        line-height: 22px;
+        max-width: 404px;
+    }
+
+    section.membership .member_items .free .see-more {
+        font-size: 16px;
+        margin-top: 50px;
+    }
+    section.membership .back a {
+        width: 100px;
+        height: 30px;
+        float: right;
+        margin-top: 50px;
+    }
+
+    section.membership .back a {
+        font-size: 15px;
+        line-height: 22px;
+    }
 
 }
 
@@ -1549,7 +1946,9 @@ footer p.text-center:hover {
     }
 
     .hamb_sticky {
-        display: block;
+         position: fixed;
+        margin-top: 0px;
+        z-index: 99999999999999999999999;
     }
 
     section.heading {
@@ -2064,48 +2463,7 @@ footer p.text-center:hover {
 
     
    
-    section.workouts .workout_items .workout_text {
-        position: static;
-    }
-    
-
-    section.workouts .sub_title {
-        font-size: 13px;
-        line-height: 24px;
-        letter-spacing: 0.5px;
-    }
-
-    section.workouts button {
-        width: 160px;
-        height: 60px;
-    }
-    section.workouts button a {
-        font-size: 15px;
-    }
-
-    section.workouts .workout_opportunities {
-        position: static;
-        margin-top: 150px;
-        margin-bottom: 150px;
-        display: flex;
-        width: 100%;
-        gap: 3rem;
-        align-items: center;
-        justify-content: center;
-    }
-    section.workouts .workout_opportunities .men_img {
-        width: 100%;
-        right: 2px;
-        background-color: #2e2e2e;
-        border-radius: 20px;
-        padding: 50px 20px;
-    }
-    section.workouts .workout_opportunities img.men {
-        position: relative;
-        width: 100%;
-        right: 0px;
-    }
-
+   
     section.workouts .workout_opportunities .box-1 {
         width: 150px;
         height: 90px;
