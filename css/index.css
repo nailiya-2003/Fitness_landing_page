@@ -2928,6 +2928,7 @@ footer p.text-center:hover {
 
     section.heading {
         padding: 50px 30px 0 30px;
+        background: transparent;
     }
 
     section.workouts {
@@ -2936,6 +2937,7 @@ footer p.text-center:hover {
         background-repeat: no-repeat;
         background-size: 100px;
         z-index: 0;
+        background: transparent;
     }
 
     section.workouts .workout_items {
