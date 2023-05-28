@@ -241,6 +241,13 @@ header nav ul li a:hover::after {
     cursor: pointer;
     font-family: 'Inter';
 }
+.menu li a {
+    color: #fefefe;
+    text-decoration: none;
+}
+.menu li a:hover {
+    text-shadow: -1px -1px 12px #FFFFFF;
+}
 
 section.workouts {
     width: 100%;
@@ -1403,7 +1410,7 @@ footer p.text-center:hover {
         padding: 180px 0px 0 0px;
         display: block;
         z-index: 0;
-        background-image: linear-gradient(to left, rgba(23, 23, 23, 0.6) 26.48%, rgba(23, 23, 23, 0.6) 73.52%), url("https://i.pinimg.com/564x/0e/61/4c/0e614cb1fef93ee87db7ad240590289f.jpg");
+        background-image: linear-gradient(to left, rgba(23, 23, 23, 0.6) 26.48%, rgba(23, 23, 23, 0.6) 73.52%), url("../images/");
         background-repeat: no-repeat;
         background-position: right 60px, top 40px;
         background-size: 100%;
