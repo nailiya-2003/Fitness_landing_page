@@ -2474,7 +2474,20 @@ footer p.text-center:hover {
         margin-top: 35px;
         z-index: 99999999999999;
     }
+    .hamburger__bars {
+        width: 25px;
+    }
+    .hamburger__bars:before {
+        top: -10px;
+    }
+    .hamburger__bars:before, .hamburger__bars:after {
+        width: 25px;
+        height: 3px;
+    }
+    .hamburger__bars:after {
+        bottom: -10px;
 
+    }
     section.heading {
         padding: 80px 50px 0 50px;
     }
@@ -2922,7 +2935,7 @@ footer p.text-center:hover {
 
     .hamb_sticky {
         position: fixed;
-        margin-top: 0px;
+        margin-top: 3px;
         z-index: 99999999999999999999999;
     }
 
@@ -3231,7 +3244,7 @@ footer p.text-center:hover {
     }
 
     section.opportunities {
-        padding: 0px 64px 180px 30px;
+        padding: 0px 64px 180px 64px;
         min-height: 1570px;
         width: 100%;
     }
@@ -3320,11 +3333,15 @@ footer p.text-center:hover {
     }
 
     section.membership {
-        padding: 0px 64px 27px 10px;
+        padding: 0px 20px 27px 64px;
     }
 
     section.membership .member_items {
         padding: 0px 77px 0px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     section.membership .member_items .member-title {
@@ -3335,6 +3352,11 @@ footer p.text-center:hover {
     section.membership .member_items .member-blocks {
         flex-wrap: wrap;
         gap: 3rem;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      
+        flex-direction: column;
     }
 
     section.membership .member_items .free,
