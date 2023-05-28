@@ -241,10 +241,12 @@ header nav ul li a:hover::after {
     cursor: pointer;
     font-family: 'Inter';
 }
+
 .menu li a {
     color: #fefefe;
     text-decoration: none;
 }
+
 .menu li a:hover {
     text-shadow: -1px -1px 12px #FFFFFF;
 }
@@ -2481,20 +2483,26 @@ footer p.text-center:hover {
         margin-top: 35px;
         z-index: 99999999999999;
     }
+
     .hamburger__bars {
         width: 25px;
     }
+
     .hamburger__bars:before {
         top: -10px;
     }
-    .hamburger__bars:before, .hamburger__bars:after {
+
+    .hamburger__bars:before,
+    .hamburger__bars:after {
         width: 25px;
         height: 3px;
     }
+
     .hamburger__bars:after {
         bottom: -10px;
 
     }
+
     section.heading {
         padding: 80px 50px 0 50px;
     }
@@ -3362,7 +3370,7 @@ footer p.text-center:hover {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-      
+
         flex-direction: column;
     }
 
