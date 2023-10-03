@@ -1219,9 +1219,6 @@ footer p.text-center:hover {
     }
 
     section.workouts .title {
-        font-family: 'SF Pro Display';
-        font-style: normal;
-        font-weight: 800;
         font-size: 150px;
         line-height: 170px;
         letter-spacing: -2px;
@@ -1230,9 +1227,6 @@ footer p.text-center:hover {
     }
 
     section.workouts .sub_title {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         letter-spacing: 0.5px;
@@ -1260,9 +1254,6 @@ footer p.text-center:hover {
     }
 
     section.workouts button a {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
         font-size: 18px;
         line-height: 22px;
         letter-spacing: 1px;
@@ -2942,11 +2933,14 @@ footer p.text-center:hover {
     header nav ul {
         display: none;
     }
+    .menu ul {
+        margin-right: 0px;
+        margin-left: 65px;
+    }
 
     section.workouts .workout_opportunities_lap-version .boxes {
         display: none;
     }
-
 
     .hamb_sticky {
         position: fixed;
@@ -2955,7 +2949,7 @@ footer p.text-center:hover {
     }
 
     section.heading {
-        padding: 50px 30px 0 30px;
+        padding: 50px 15px 0 15px;
         background: transparent;
     }
 
@@ -2977,11 +2971,12 @@ footer p.text-center:hover {
     }
 
     section.workouts .title {
-        font-size: 60px;
-        line-height: 60px;
-        letter-spacing: 5px;
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 3px;
         text-align: center;
-        width: 100%;
+        margin-top: 50px;
+        /* width: 100%;  */
     }
 
     section.workouts .sub_title {
@@ -3014,8 +3009,7 @@ footer p.text-center:hover {
     }
 
     section.workouts .features {
-        margin-top: 150px;
-        margin-bottom: 30px;
+        margin-top: 120px;
     }
 
     section.workouts .features .feature_text {
@@ -3034,7 +3028,7 @@ footer p.text-center:hover {
     section.workouts .workout-opportunities_mob-version {
         display: block;
         width: 100%;
-        padding: 80px 0;
+        padding: 0px;
     }
 
     section.opportunities .workout-opportunities_mob-version .grid-container {
@@ -3066,7 +3060,7 @@ footer p.text-center:hover {
         background-size: 71%;
         background-position: 150px;
         flex-direction: column;
-        margin-top: 50px;
+        margin-top: 15px;
     }
 
     section.workouts .workout-opportunities_mob-version .box-1 {
@@ -3142,9 +3136,6 @@ footer p.text-center:hover {
     section.workouts .workout-opportunities_mob-version .box-3 .text_3 {
         font-size: 30px;
         line-height: 20px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
         letter-spacing: 1px;
         color: #FAFAF9;
     }
@@ -3169,20 +3160,25 @@ footer p.text-center:hover {
     section.start {
         width: 100%;
         min-height: 280px;
-        padding: 50px 0 0px 30px;
+        padding: 75px 0 0px 20px;
     }
 
     section.start .owl-carousel {
         display: none;
     }
+    .responsive-carousel .container {
+        padding: 0px;
+    }
 
     section.start .start_title {
-        font-size: 30px;
+        font-size: 31px;
+        text-align: left;
     }
 
     section.start .start_subtitle {
         font-size: 14px;
         line-height: 20px;
+        text-align: left;
     }
 
     section.start .responsive-carousel .box {
@@ -3190,9 +3186,13 @@ footer p.text-center:hover {
         min-height: 190px;
         background: #323443;
         border-radius: 12px;
-        padding: 52px 52px 52px 40px;
+        padding: 5px 5px 5px 5px;
         transition: 0.5s;
         margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     section.start .responsive-carousel .box:hover {
@@ -3205,24 +3205,18 @@ footer p.text-center:hover {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 24px;
         letter-spacing: 0.5px;
         color: #FAFAF9;
-        text-align: left;
+        text-align: center;
     }
 
     section.start .responsive-carousel .box .descr {
         position: relative;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.3px;
-        color: rgba(239, 237, 232, 0.65);
-        margin-top: 12px;
-        text-align: left;
+        font-size: 13px;
+        margin-top: 5px;
+        text-align: center;
     }
 
     section.start .responsive-carousel .box .descr span {
@@ -3259,7 +3253,7 @@ footer p.text-center:hover {
     }
 
     section.opportunities {
-        padding: 0px 64px 180px 64px;
+        padding: 0px 10px 100px 10px;
         min-height: 1570px;
         width: 100%;
     }
@@ -3278,17 +3272,19 @@ footer p.text-center:hover {
 
     section.opportunities .opportunities-items .at_home_txt {
         width: 100%;
-        padding: 100px 20px 90px 10px;
+        padding: 20px 0px 90px 10px;
     }
 
     section.opportunities .opportunities-items .at_home_txt .work-txt {
-        font-size: 25px;
+        font-size: 31px;
         line-height: 40px;
+        text-align: left;
     }
 
     section.opportunities .opportunities-items .at_home_txt .work-descr {
         width: 100%;
         font-size: 14px;
+        text-align: left;
     }
 
     section.opportunities .opportunities-items .at_home_img:hover {
@@ -3333,7 +3329,7 @@ footer p.text-center:hover {
     section.opportunities .opportunities-items .get_programs {
         width: 100%;
         margin-top: 121px;
-        padding: 0px 20px 0px 10px;
+        padding: 0px 10px 0px 10px;
         order: 2;
     }
 
@@ -3345,14 +3341,15 @@ footer p.text-center:hover {
     section.opportunities .opportunities-items .get_programs .get-descr {
         font-size: 14px;
         line-height: 24px;
+        text-align: left;
     }
 
     section.membership {
-        padding: 0px 20px 27px 64px;
+        padding: 0px 20px 27px 20px;
     }
 
     section.membership .member_items {
-        padding: 0px 77px 0px 30px;
+        padding: 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -3366,17 +3363,16 @@ footer p.text-center:hover {
 
     section.membership .member_items .member-blocks {
         flex-wrap: wrap;
-        gap: 3rem;
+        gap: 0rem;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-
-        flex-direction: column;
+        margin-top: 0px;
     }
 
     section.membership .member_items .free,
     .plus {
-        max-width: 350px;
+        max-width: 270px;
         padding: 50px 50px 0px 50px;
         min-height: 100%;
         display: block;
