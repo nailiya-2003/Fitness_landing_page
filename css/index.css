@@ -2921,6 +2921,9 @@ footer p.text-center:hover {
 }
 
 @media only screen and (max-width: 556px) {
+    body {
+        margin-right: 0px;
+    }
     header nav ul {
         display: none;
     }
@@ -2982,7 +2985,6 @@ footer p.text-center:hover {
     section.workouts button {
         width: 150px;
         height: 50px;
-        transition: 0.5s;
         display: block;
         margin: 0 auto;
         margin-top: 90px;
@@ -3165,7 +3167,6 @@ footer p.text-center:hover {
     section.start .responsive-carousel .box {
         max-width: 304px;
         min-height: 190px;
-        background: #323443;
         border-radius: 12px;
         padding: 5px 5px 5px 5px;
         transition: 0.5s;
@@ -3405,6 +3406,11 @@ footer p.text-center:hover {
     section.membership .member_items .free .see-more {
         font-size: 14px;
         margin-top: 50px;
+    }
+    section.opportunities .get_programs .see {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
     }
 
     section.membership .member_items .plus .join-club {
