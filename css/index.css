@@ -2621,9 +2621,6 @@ footer p.text-center:hover {
     section.workouts .workout-opportunities_mob-version .box-2 .text_2 {
         font-size: 19px;
         line-height: 20px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
         letter-spacing: 0.3px;
         color: #FAFAF9;
     }
@@ -2631,9 +2628,6 @@ footer p.text-center:hover {
     section.workouts .workout-opportunities_mob-version .box-2 .text_2 span {
         font-size: 13px;
         line-height: 20px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
         letter-spacing: 0.5px;
         color: rgba(239, 237, 232, 0.65);
     }
@@ -2659,9 +2653,6 @@ footer p.text-center:hover {
 
     section.workouts .workout-opportunities_mob-version .box-3 .text_3 span {
         font-size: 11px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
         line-height: 5px;
         letter-spacing: 1px;
         color: rgba(239, 237, 232, 0.65);
@@ -2935,7 +2926,8 @@ footer p.text-center:hover {
     }
     .menu ul {
         margin-right: 0px;
-        margin-left: 65px;
+        margin-left: 50px;
+        padding-left: 10px;
     }
 
     section.workouts .workout_opportunities_lap-version .boxes {
@@ -3009,7 +3001,8 @@ footer p.text-center:hover {
     }
 
     section.workouts .features {
-        margin-top: 120px;
+        margin-top: 115px;
+        margin-left: 0px;
     }
 
     section.workouts .features .feature_text {
@@ -3075,17 +3068,11 @@ footer p.text-center:hover {
         font-size: 30px;
         line-height: 40px;
         letter-spacing: -2px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
         color: #FAFAF9;
     }
 
     section.workouts .workout-opportunities_mob-version .box-1 .text_1 span {
         font-size: 16px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
         line-height: 24px;
         letter-spacing: 0.5px;
         color: rgba(239, 237, 232, 0.65);
@@ -3117,9 +3104,6 @@ footer p.text-center:hover {
     section.workouts .workout-opportunities_mob-version .box-2 .text_2 span {
         font-size: 13px;
         line-height: 20px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
         letter-spacing: 0.5px;
         color: rgba(239, 237, 232, 0.65);
     }
@@ -3141,10 +3125,7 @@ footer p.text-center:hover {
     }
 
     section.workouts .workout-opportunities_mob-version .box-3 .text_3 span {
-        font-size: 10px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
+        font-size: 8px;
         line-height: 5px;
         letter-spacing: 1px;
         color: rgba(239, 237, 232, 0.65);
@@ -3160,7 +3141,7 @@ footer p.text-center:hover {
     section.start {
         width: 100%;
         min-height: 280px;
-        padding: 75px 0 0px 20px;
+        padding: 75px 0 0px 5px;
     }
 
     section.start .owl-carousel {
@@ -3359,6 +3340,7 @@ footer p.text-center:hover {
     section.membership .member_items .member-title {
         font-size: 35px;
         text-align: center;
+        margin-bottom: 20px;
     }
 
     section.membership .member_items .member-blocks {
@@ -3373,15 +3355,16 @@ footer p.text-center:hover {
     section.membership .member_items .free,
     .plus {
         max-width: 270px;
-        padding: 50px 50px 0px 50px;
-        min-height: 100%;
-        display: block;
-        margin: 0 auto;
+        padding: 30px 15px 0px 15px;
+        height: 610px;
+        border-top: white .7px solid;
     }
 
     section.membership .member_items .plus {
-        max-width: 350px;
-        padding: 30px 50px 0px 50px;
+        max-width: 270px;
+        padding: 30px 15px 0px 15px;
+        height: 630px;
+        margin-top: 25px;
     }
 
     section.membership .member_items .free .join-txt,
@@ -3440,8 +3423,6 @@ footer p.text-center:hover {
         justify-content: center;
         gap: 4px;
         float: right;
-        transition: 0.5s;
-        cursor: pointer;
     }
 
     section.membership .back-txt {
@@ -3449,7 +3430,16 @@ footer p.text-center:hover {
     }
 
     footer {
-        padding: 50px 30px 0 30px;
+        padding: 0px 30px 0 30px;
     }
-
+    footer h3 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .hamburger__container {
+        margin-right: 0px;
+        min-width: 25px;
+        min-height: 20px;
+        margin-top: 25px;
+    }
 }
